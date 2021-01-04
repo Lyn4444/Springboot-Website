@@ -1,0 +1,1342 @@
+2020-12-25 20:51:28  [ background-preinit:529 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 20:51:29  [ restartedMain:667 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 22188 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 20:51:29  [ restartedMain:669 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 20:51:29  [ restartedMain:801 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 20:51:29  [ restartedMain:801 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 20:51:30  [ restartedMain:2127 ] - [ ERROR ]  Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:478)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 40 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 56 more
+2020-12-25 20:51:30  [ restartedMain:2140 ] - [ WARN ]  Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 more
+2020-12-25 20:52:46  [ background-preinit:266 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 20:52:46  [ restartedMain:332 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 15496 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 20:52:46  [ restartedMain:334 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 20:52:46  [ restartedMain:447 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 20:52:46  [ restartedMain:448 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 20:52:47  [ restartedMain:1558 ] - [ ERROR ]  Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:478)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 40 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 56 more
+2020-12-25 20:52:47  [ restartedMain:1566 ] - [ WARN ]  Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 more
+2020-12-25 20:54:43  [ background-preinit:236 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 20:54:43  [ restartedMain:308 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 15532 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 20:54:43  [ restartedMain:310 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 20:54:43  [ restartedMain:396 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 20:54:43  [ restartedMain:396 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 20:54:44  [ restartedMain:1500 ] - [ ERROR ]  Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:478)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 40 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 56 more
+2020-12-25 20:54:44  [ restartedMain:1512 ] - [ WARN ]  Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 more
+2020-12-25 20:55:26  [ background-preinit:206 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 20:55:26  [ restartedMain:272 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 14504 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 20:55:26  [ restartedMain:274 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 20:55:26  [ restartedMain:366 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 20:55:26  [ restartedMain:367 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 20:55:27  [ restartedMain:1241 ] - [ ERROR ]  Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:478)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 40 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 56 more
+2020-12-25 20:55:27  [ restartedMain:1251 ] - [ WARN ]  Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 more
+2020-12-25 20:55:48  [ background-preinit:205 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 20:55:48  [ restartedMain:276 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 7060 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 20:55:48  [ restartedMain:279 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 20:55:48  [ restartedMain:373 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 20:55:48  [ restartedMain:374 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 20:55:49  [ restartedMain:1346 ] - [ ERROR ]  Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:489)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader$TrackedConditionEvaluator.shouldSkip(ConfigurationClassBeanDefinitionReader.java:478)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:140)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 24 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 40 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 56 more
+2020-12-25 20:55:49  [ restartedMain:1353 ] - [ WARN ]  Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration] from ClassLoader [sun.misc.Launcher$AppClassLoader@18b4aac2]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/filter/FormContentFilter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.filter.FormContentFilter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 more
+2020-12-25 21:00:02  [ background-preinit:267 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:00:02  [ restartedMain:338 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 20924 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:00:02  [ restartedMain:341 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:00:02  [ restartedMain:442 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:00:02  [ restartedMain:442 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:00:05  [ restartedMain:2906 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:00:05  [ restartedMain:3359 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2913 ms
+2020-12-25 21:00:06  [ restartedMain:4109 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:00:06  [ restartedMain:4383 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:00:06  [ restartedMain:4496 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:00:07  [ restartedMain:4747 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:00:07  [ restartedMain:4841 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:00:07  [ restartedMain:4882 ] - [ INFO ]  Started DemoApplication in 5.281 seconds (JVM running for 6.784)
+2020-12-25 21:00:14  [ http-nio-8080-exec-1:12248 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:00:14  [ http-nio-8080-exec-1:12250 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 21:00:15  [ http-nio-8080-exec-8:12832 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 21:00:15  [ http-nio-8080-exec-8:13107 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 21:02:46  [ background-preinit:191 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:02:46  [ restartedMain:254 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 24024 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:02:46  [ restartedMain:255 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:02:46  [ restartedMain:353 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:02:46  [ restartedMain:354 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:02:48  [ restartedMain:2099 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:02:48  [ restartedMain:2490 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2135 ms
+2020-12-25 21:02:49  [ restartedMain:3176 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:02:49  [ restartedMain:3427 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:02:49  [ restartedMain:3516 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:02:49  [ restartedMain:3701 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:02:49  [ restartedMain:3768 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:02:49  [ restartedMain:3805 ] - [ INFO ]  Started DemoApplication in 4.108 seconds (JVM running for 5.251)
+2020-12-25 21:02:54  [ http-nio-8080-exec-1:8782 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:02:54  [ http-nio-8080-exec-1:8784 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 21:10:19  [ background-preinit:436 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:10:19  [ restartedMain:485 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 22404 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:10:19  [ restartedMain:487 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:10:19  [ restartedMain:631 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:10:19  [ restartedMain:632 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:10:21  [ restartedMain:2680 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:10:21  [ restartedMain:3078 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2442 ms
+2020-12-25 21:10:22  [ restartedMain:3789 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:10:22  [ restartedMain:4005 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:10:22  [ restartedMain:4097 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:10:23  [ restartedMain:4267 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:10:23  [ restartedMain:4322 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:10:23  [ restartedMain:4360 ] - [ INFO ]  Started DemoApplication in 5.131 seconds (JVM running for 7.634)
+2020-12-25 21:10:24  [ http-nio-8080-exec-1:5765 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:10:24  [ http-nio-8080-exec-1:5768 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-25 21:10:31  [ http-nio-8080-exec-9:12488 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 21:10:31  [ http-nio-8080-exec-9:12674 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 21:12:01  [ http-nio-8080-exec-4:102525 ] - [ ERROR ]  发生一个异常：com.example.demo.pojo.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 21:12:01  [ http-nio-8080-exec-4:102528 ] - [ WARN ]  Resolved [com.example.demo.pojo.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 21:13:18  [ background-preinit:284 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:13:18  [ restartedMain:385 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 23724 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:13:18  [ restartedMain:388 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:13:19  [ restartedMain:580 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:13:19  [ restartedMain:581 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:13:24  [ restartedMain:5673 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:13:24  [ restartedMain:6246 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 5663 ms
+2020-12-25 21:13:25  [ restartedMain:7255 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:13:25  [ restartedMain:7524 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:13:26  [ restartedMain:7636 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:13:26  [ restartedMain:7872 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:13:26  [ restartedMain:7947 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:13:26  [ restartedMain:7987 ] - [ INFO ]  Started DemoApplication in 8.528 seconds (JVM running for 11.173)
+2020-12-25 21:13:29  [ http-nio-8080-exec-2:11026 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:13:29  [ http-nio-8080-exec-2:11028 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 21:13:30  [ http-nio-8080-exec-8:11865 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 21:13:30  [ http-nio-8080-exec-8:12159 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 21:13:30  [ http-nio-8080-exec-10:12451 ] - [ ERROR ]  发生一个异常：com.example.demo.pojo.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 21:13:30  [ http-nio-8080-exec-10:12456 ] - [ WARN ]  Resolved [com.example.demo.pojo.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 21:37:56  [ background-preinit:644 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:37:56  [ restartedMain:750 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 19048 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:37:56  [ restartedMain:754 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:37:56  [ restartedMain:936 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:37:56  [ restartedMain:937 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:38:00  [ restartedMain:5346 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:38:01  [ restartedMain:6145 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 5205 ms
+2020-12-25 21:38:02  [ restartedMain:6850 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:38:02  [ restartedMain:7178 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:38:02  [ restartedMain:7309 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:38:03  [ restartedMain:7575 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:38:03  [ restartedMain:7657 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:38:03  [ restartedMain:7708 ] - [ INFO ]  Started DemoApplication in 8.52 seconds (JVM running for 10.684)
+2020-12-25 21:38:03  [ http-nio-8080-exec-1:7852 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:38:03  [ http-nio-8080-exec-1:7856 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-25 21:38:04  [ http-nio-8080-exec-9:9296 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 21:38:05  [ http-nio-8080-exec-9:9628 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 21:38:07  [ http-nio-8080-exec-2:12184 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 21:38:07  [ http-nio-8080-exec-2:12187 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 21:40:06  [ http-nio-8080-exec-7:131459 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.EmailException: 用户名已经注册
+2020-12-25 21:40:06  [ http-nio-8080-exec-7:131463 ] - [ WARN ]  Resolved [com.example.demo.exception.EmailException: 用户名已经注册]
+2020-12-25 21:54:08  [ background-preinit:315 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:54:08  [ restartedMain:387 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 244 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:54:08  [ restartedMain:390 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:54:08  [ restartedMain:534 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:54:08  [ restartedMain:535 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:54:11  [ restartedMain:3492 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:54:12  [ restartedMain:3908 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3371 ms
+2020-12-25 21:54:12  [ restartedMain:4669 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:54:13  [ restartedMain:4906 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:54:13  [ restartedMain:4995 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:54:13  [ restartedMain:5160 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:54:13  [ restartedMain:5213 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:54:13  [ restartedMain:5256 ] - [ INFO ]  Started DemoApplication in 6.003 seconds (JVM running for 8.918)
+2020-12-25 21:54:13  [ http-nio-8080-exec-1:5294 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:54:13  [ http-nio-8080-exec-1:5297 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-25 21:54:13  [ http-nio-8080-exec-9:5893 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 21:54:14  [ http-nio-8080-exec-9:6070 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 21:55:36  [ background-preinit:366 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:55:37  [ restartedMain:453 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 9940 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:55:37  [ restartedMain:455 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:55:37  [ restartedMain:591 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:55:37  [ restartedMain:592 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:55:39  [ restartedMain:3365 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:55:40  [ restartedMain:3870 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3276 ms
+2020-12-25 21:55:41  [ restartedMain:4561 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:55:41  [ restartedMain:4808 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:55:41  [ restartedMain:4909 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:55:41  [ restartedMain:5109 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:55:41  [ restartedMain:5171 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:55:41  [ restartedMain:5206 ] - [ INFO ]  Started DemoApplication in 5.866 seconds (JVM running for 7.483)
+2020-12-25 21:55:41  [ http-nio-8080-exec-1:5280 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:55:41  [ http-nio-8080-exec-1:5283 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 21:55:42  [ http-nio-8080-exec-1:6080 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 21:55:42  [ http-nio-8080-exec-1:6373 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 21:57:25  [ background-preinit:303 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:57:25  [ restartedMain:420 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 17620 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:57:25  [ restartedMain:422 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:57:25  [ restartedMain:592 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:57:25  [ restartedMain:592 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:57:27  [ restartedMain:2821 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:57:28  [ restartedMain:3273 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2679 ms
+2020-12-25 21:57:29  [ restartedMain:3937 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:57:29  [ restartedMain:4181 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:57:29  [ restartedMain:4263 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:57:29  [ restartedMain:4457 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:57:29  [ restartedMain:4521 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:57:29  [ restartedMain:4564 ] - [ INFO ]  Started DemoApplication in 5.184 seconds (JVM running for 7.82)
+2020-12-25 21:57:29  [ http-nio-8080-exec-1:4688 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:57:29  [ http-nio-8080-exec-1:4690 ] - [ INFO ]  Completed initialization in 1 ms
+2020-12-25 21:57:30  [ http-nio-8080-exec-8:5353 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 21:57:30  [ http-nio-8080-exec-8:5587 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 21:59:04  [ background-preinit:313 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 21:59:04  [ restartedMain:387 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 19704 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 21:59:04  [ restartedMain:389 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 21:59:04  [ restartedMain:480 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 21:59:04  [ restartedMain:481 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 21:59:06  [ restartedMain:2698 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 21:59:07  [ restartedMain:3133 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2650 ms
+2020-12-25 21:59:07  [ restartedMain:3800 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 21:59:07  [ restartedMain:3950 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 21:59:08  [ restartedMain:4147 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 21:59:08  [ restartedMain:4319 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 21:59:08  [ restartedMain:4382 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 21:59:08  [ restartedMain:4423 ] - [ INFO ]  Started DemoApplication in 5.665 seconds (JVM running for 8.598)
+2020-12-25 21:59:08  [ http-nio-8080-exec-1:4576 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 21:59:08  [ http-nio-8080-exec-1:4579 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 21:59:09  [ http-nio-8080-exec-8:5264 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 21:59:09  [ http-nio-8080-exec-8:5479 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:05:57  [ background-preinit:413 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:05:57  [ restartedMain:485 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 19404 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:05:57  [ restartedMain:487 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:05:57  [ restartedMain:595 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:05:57  [ restartedMain:596 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:05:59  [ restartedMain:2490 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:05:59  [ restartedMain:2889 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2291 ms
+2020-12-25 22:06:00  [ restartedMain:3694 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:06:00  [ restartedMain:4023 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:06:00  [ restartedMain:4152 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:06:01  [ restartedMain:4351 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:06:01  [ restartedMain:4424 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:06:01  [ restartedMain:4464 ] - [ INFO ]  Started DemoApplication in 5.196 seconds (JVM running for 7.998)
+2020-12-25 22:06:01  [ http-nio-8080-exec-1:4536 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:06:01  [ http-nio-8080-exec-1:4538 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 22:06:02  [ http-nio-8080-exec-9:5260 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 22:06:02  [ http-nio-8080-exec-9:5454 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:08:07  [ background-preinit:315 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:08:07  [ restartedMain:417 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 24060 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:08:07  [ restartedMain:419 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:08:07  [ restartedMain:521 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:08:07  [ restartedMain:522 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:08:10  [ restartedMain:3428 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:08:11  [ restartedMain:3856 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3332 ms
+2020-12-25 22:08:11  [ restartedMain:4499 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:08:12  [ restartedMain:4737 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:08:12  [ restartedMain:4842 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:08:12  [ restartedMain:5028 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:08:12  [ restartedMain:5092 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:08:12  [ restartedMain:5126 ] - [ INFO ]  Started DemoApplication in 5.649 seconds (JVM running for 7.397)
+2020-12-25 22:08:12  [ http-nio-8080-exec-1:5358 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:08:12  [ http-nio-8080-exec-1:5361 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-25 22:08:13  [ http-nio-8080-exec-8:5895 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 22:08:13  [ http-nio-8080-exec-8:6122 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:36:58  [ background-preinit:380 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:36:58  [ restartedMain:452 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 15496 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:36:58  [ restartedMain:454 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:36:58  [ restartedMain:593 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:36:58  [ restartedMain:593 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:37:01  [ restartedMain:3520 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:37:01  [ restartedMain:4062 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3467 ms
+2020-12-25 22:37:02  [ restartedMain:4806 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:37:02  [ restartedMain:5054 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:37:02  [ restartedMain:5147 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:37:03  [ restartedMain:5346 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:37:03  [ restartedMain:5403 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:37:03  [ restartedMain:5441 ] - [ INFO ]  Started DemoApplication in 6.028 seconds (JVM running for 8.001)
+2020-12-25 22:37:03  [ http-nio-8080-exec-1:6070 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:37:03  [ http-nio-8080-exec-1:6080 ] - [ INFO ]  Completed initialization in 9 ms
+2020-12-25 22:37:04  [ http-nio-8080-exec-8:6866 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 22:37:04  [ http-nio-8080-exec-8:7072 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:37:22  [ http-nio-8080-exec-2:24362 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.EmailException: email已经注册
+2020-12-25 22:37:22  [ http-nio-8080-exec-2:24365 ] - [ WARN ]  Resolved [com.example.demo.exception.EmailException: email已经注册]
+2020-12-25 22:40:13  [ background-preinit:429 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:40:13  [ restartedMain:509 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 18044 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:40:13  [ restartedMain:511 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:40:14  [ restartedMain:641 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:40:14  [ restartedMain:642 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:40:16  [ restartedMain:2744 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:40:16  [ restartedMain:3152 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2508 ms
+2020-12-25 22:40:17  [ restartedMain:3744 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:40:17  [ restartedMain:3943 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:40:17  [ restartedMain:4032 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:40:17  [ restartedMain:4206 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:40:17  [ restartedMain:4257 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:40:17  [ restartedMain:4292 ] - [ INFO ]  Started DemoApplication in 5.157 seconds (JVM running for 8.515)
+2020-12-25 22:40:20  [ http-nio-8080-exec-1:7093 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:40:20  [ http-nio-8080-exec-1:7095 ] - [ INFO ]  Completed initialization in 1 ms
+2020-12-25 22:40:21  [ http-nio-8080-exec-8:7645 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 22:40:21  [ http-nio-8080-exec-8:7942 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:40:33  [ http-nio-8080-exec-10:19745 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.EmailException: email已经注册
+2020-12-25 22:40:33  [ http-nio-8080-exec-10:19747 ] - [ WARN ]  Resolved [com.example.demo.exception.EmailException: email已经注册]
+2020-12-25 22:42:17  [ background-preinit:492 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:42:17  [ restartedMain:595 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10792 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:42:17  [ restartedMain:597 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:42:17  [ restartedMain:778 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:42:17  [ restartedMain:779 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:42:20  [ restartedMain:3544 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:42:20  [ restartedMain:4010 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3229 ms
+2020-12-25 22:42:21  [ restartedMain:4623 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:42:21  [ restartedMain:4857 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:42:21  [ restartedMain:4950 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:42:21  [ restartedMain:5184 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:42:21  [ restartedMain:5253 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:42:21  [ restartedMain:5298 ] - [ INFO ]  Started DemoApplication in 5.869 seconds (JVM running for 7.979)
+2020-12-25 22:42:22  [ http-nio-8080-exec-2:5329 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:42:22  [ http-nio-8080-exec-2:5332 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-25 22:42:22  [ http-nio-8080-exec-8:6022 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 22:42:22  [ http-nio-8080-exec-8:6311 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:43:26  [ background-preinit:265 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:43:26  [ restartedMain:339 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 20768 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:43:26  [ restartedMain:340 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:43:27  [ restartedMain:464 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:43:27  [ restartedMain:464 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:43:29  [ restartedMain:2980 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:43:30  [ restartedMain:3417 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2950 ms
+2020-12-25 22:43:30  [ restartedMain:4282 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:43:31  [ restartedMain:4481 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:43:31  [ restartedMain:4552 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:43:31  [ restartedMain:4763 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:43:31  [ restartedMain:4817 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:43:31  [ restartedMain:4851 ] - [ INFO ]  Started DemoApplication in 5.381 seconds (JVM running for 7.266)
+2020-12-25 22:47:24  [ background-preinit:302 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:47:24  [ restartedMain:380 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 17848 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:47:24  [ restartedMain:383 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:47:24  [ restartedMain:501 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:47:24  [ restartedMain:502 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:47:27  [ restartedMain:3248 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:47:27  [ restartedMain:3648 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3144 ms
+2020-12-25 22:47:28  [ restartedMain:4277 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:47:28  [ restartedMain:4462 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:47:28  [ restartedMain:4548 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:47:28  [ restartedMain:4725 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:47:28  [ restartedMain:4780 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:47:28  [ restartedMain:4812 ] - [ INFO ]  Started DemoApplication in 5.377 seconds (JVM running for 7.379)
+2020-12-25 22:47:30  [ http-nio-8080-exec-2:6710 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:47:30  [ http-nio-8080-exec-2:6713 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-25 22:47:43  [ http-nio-8080-exec-9:19959 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 22:47:44  [ http-nio-8080-exec-9:20165 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:50:19  [ background-preinit:390 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:50:19  [ restartedMain:473 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 13128 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:50:19  [ restartedMain:475 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:50:19  [ restartedMain:603 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:50:19  [ restartedMain:604 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:50:22  [ restartedMain:3628 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:50:23  [ restartedMain:4225 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3619 ms
+2020-12-25 22:50:24  [ restartedMain:4923 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:50:24  [ restartedMain:5124 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:50:24  [ restartedMain:5206 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:50:24  [ restartedMain:5397 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:50:24  [ restartedMain:5462 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:50:24  [ restartedMain:5502 ] - [ INFO ]  Started DemoApplication in 6.068 seconds (JVM running for 8.161)
+2020-12-25 22:53:22  [ http-nio-8080-exec-3:182832 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:53:22  [ http-nio-8080-exec-3:182834 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 22:53:22  [ http-nio-8080-exec-10:183545 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 22:53:22  [ http-nio-8080-exec-10:183735 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:54:29  [ background-preinit:296 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:54:29  [ restartedMain:393 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 808 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:54:29  [ restartedMain:395 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:54:29  [ restartedMain:610 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:54:29  [ restartedMain:614 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:54:32  [ restartedMain:3293 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:54:32  [ restartedMain:3710 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3093 ms
+2020-12-25 22:54:33  [ restartedMain:4417 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:54:33  [ restartedMain:4611 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:54:33  [ restartedMain:4701 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:54:33  [ restartedMain:4900 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:54:33  [ restartedMain:4957 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:54:33  [ restartedMain:4997 ] - [ INFO ]  Started DemoApplication in 5.482 seconds (JVM running for 7.533)
+2020-12-25 22:54:33  [ http-nio-8080-exec-1:5106 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:54:33  [ http-nio-8080-exec-1:5108 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 22:54:34  [ http-nio-8080-exec-8:5816 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 22:54:34  [ http-nio-8080-exec-8:6009 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 22:59:55  [ background-preinit:257 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 22:59:55  [ restartedMain:321 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 5684 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 22:59:55  [ restartedMain:323 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 22:59:55  [ restartedMain:414 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 22:59:55  [ restartedMain:415 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 22:59:58  [ restartedMain:2686 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 22:59:58  [ restartedMain:3126 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2709 ms
+2020-12-25 22:59:59  [ restartedMain:3721 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 22:59:59  [ restartedMain:3951 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 22:59:59  [ restartedMain:4045 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 22:59:59  [ restartedMain:4288 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 22:59:59  [ restartedMain:4360 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 22:59:59  [ restartedMain:4405 ] - [ INFO ]  Started DemoApplication in 4.812 seconds (JVM running for 6.732)
+2020-12-25 22:59:59  [ http-nio-8080-exec-1:4445 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 22:59:59  [ http-nio-8080-exec-1:4448 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-25 23:00:00  [ http-nio-8080-exec-10:5152 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 23:00:00  [ http-nio-8080-exec-10:5362 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 23:02:55  [ background-preinit:243 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 23:02:55  [ restartedMain:311 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 13016 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:02:55  [ restartedMain:312 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:02:55  [ restartedMain:388 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:02:55  [ restartedMain:389 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:02:57  [ restartedMain:2290 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:02:57  [ restartedMain:2703 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2313 ms
+2020-12-25 23:02:58  [ restartedMain:3372 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:02:58  [ restartedMain:3587 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:02:58  [ restartedMain:3676 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:02:58  [ restartedMain:3834 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:02:58  [ restartedMain:3896 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:02:58  [ restartedMain:3929 ] - [ INFO ]  Started DemoApplication in 4.454 seconds (JVM running for 7.452)
+2020-12-25 23:03:05  [ http-nio-8080-exec-1:11004 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 23:03:05  [ http-nio-8080-exec-1:11006 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 23:03:06  [ http-nio-8080-exec-8:11840 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 23:03:07  [ http-nio-8080-exec-8:12087 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 23:10:01  [ http-nio-8080-exec-8:426354 ] - [ ERROR ]  发生一个异常：java.lang.NullPointerException
+2020-12-25 23:10:01  [ http-nio-8080-exec-8:426360 ] - [ WARN ]  Resolved [java.lang.NullPointerException]
+2020-12-25 23:10:14  [ http-nio-8080-exec-10:439506 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-25 23:10:14  [ http-nio-8080-exec-10:439509 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-25 23:10:17  [ http-nio-8080-exec-1:442136 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-25 23:10:17  [ http-nio-8080-exec-1:442141 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-25 23:10:28  [ http-nio-8080-exec-5:453120 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-25 23:10:28  [ http-nio-8080-exec-5:453124 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-25 23:14:44  [ Thread-15:709343 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:14:44  [ Thread-15:709346 ] - [ INFO ]  HikariPool-1 - Shutdown initiated...
+2020-12-25 23:14:44  [ Thread-15:709387 ] - [ INFO ]  HikariPool-1 - Shutdown completed.
+2020-12-25 23:14:44  [ restartedMain:709672 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:14:44  [ restartedMain:709673 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:14:44  [ restartedMain:709691 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 13016 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:14:44  [ restartedMain:709692 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:14:45  [ restartedMain:710411 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:14:45  [ restartedMain:710570 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 873 ms
+2020-12-25 23:14:45  [ restartedMain:710680 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController': Unsatisfied dependency expressed through field 'newsAttitudeService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.service.NewsAttitudeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-12-25 23:14:45  [ restartedMain:710746 ] - [ ERROR ]  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field newsAttitudeService in com.example.demo.controller.ArticleController required a bean of type 'com.example.demo.service.NewsAttitudeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.service.NewsAttitudeService' in your configuration.
+
+2020-12-25 23:14:47  [ restartedMain:712393 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:14:47  [ restartedMain:712394 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:14:47  [ restartedMain:712405 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 13016 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:14:47  [ restartedMain:712406 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:14:47  [ restartedMain:712935 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:14:48  [ restartedMain:713072 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 662 ms
+2020-12-25 23:14:48  [ restartedMain:713159 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController': Unsatisfied dependency expressed through field 'newsAttitudeService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.service.NewsAttitudeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-12-25 23:14:48  [ restartedMain:713189 ] - [ ERROR ]  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field newsAttitudeService in com.example.demo.controller.ArticleController required a bean of type 'com.example.demo.service.NewsAttitudeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.service.NewsAttitudeService' in your configuration.
+
+2020-12-25 23:15:07  [ restartedMain:732421 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:15:07  [ restartedMain:732422 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:15:07  [ restartedMain:732434 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 13016 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:15:07  [ restartedMain:732434 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:15:08  [ restartedMain:733253 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:15:08  [ restartedMain:733437 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 999 ms
+2020-12-25 23:15:08  [ restartedMain:733544 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController': Unsatisfied dependency expressed through field 'newsAttitudeService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.service.NewsAttitudeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-12-25 23:15:08  [ restartedMain:733574 ] - [ ERROR ]  
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field newsAttitudeService in com.example.demo.controller.ArticleController required a bean of type 'com.example.demo.service.NewsAttitudeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.service.NewsAttitudeService' in your configuration.
+
+2020-12-25 23:15:25  [ restartedMain:750103 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:15:25  [ restartedMain:750105 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:15:25  [ restartedMain:750118 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 13016 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:15:25  [ restartedMain:750119 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:15:25  [ restartedMain:750717 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:15:25  [ restartedMain:750979 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 856 ms
+2020-12-25 23:15:26  [ restartedMain:751341 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:15:26  [ restartedMain:751366 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:15:26  [ restartedMain:751413 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:15:26  [ restartedMain:751482 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:15:26  [ restartedMain:751511 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:15:26  [ restartedMain:751527 ] - [ INFO ]  Started DemoApplication in 1.472 seconds (JVM running for 755.05)
+2020-12-25 23:15:26  [ restartedMain:751531 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-25 23:15:53  [ Thread-23:778839 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:15:54  [ restartedMain:779095 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:15:54  [ restartedMain:779097 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:15:54  [ restartedMain:779114 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 13016 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:15:54  [ restartedMain:779115 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:15:54  [ restartedMain:779727 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:15:54  [ restartedMain:779870 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 747 ms
+2020-12-25 23:15:55  [ restartedMain:780170 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:15:55  [ restartedMain:780213 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:15:55  [ restartedMain:780264 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:15:55  [ restartedMain:780369 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:15:55  [ restartedMain:780401 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:15:55  [ restartedMain:780421 ] - [ INFO ]  Started DemoApplication in 1.373 seconds (JVM running for 783.943)
+2020-12-25 23:15:55  [ restartedMain:780425 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-25 23:16:39  [ Thread-37:824072 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:16:39  [ restartedMain:824316 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:16:39  [ restartedMain:824317 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:16:39  [ restartedMain:824327 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 13016 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:16:39  [ restartedMain:824328 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:16:39  [ restartedMain:824921 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:16:40  [ restartedMain:825130 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 798 ms
+2020-12-25 23:16:40  [ restartedMain:825425 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:16:40  [ restartedMain:825480 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:16:40  [ restartedMain:825556 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:16:40  [ restartedMain:825664 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:16:40  [ restartedMain:825692 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:16:40  [ restartedMain:825708 ] - [ INFO ]  Started DemoApplication in 1.429 seconds (JVM running for 829.231)
+2020-12-25 23:16:40  [ restartedMain:825712 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-25 23:18:50  [ background-preinit:275 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 23:18:51  [ restartedMain:345 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 1952 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:18:51  [ restartedMain:347 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:18:51  [ restartedMain:468 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:18:51  [ restartedMain:469 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:18:54  [ restartedMain:3750 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:18:55  [ restartedMain:4547 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 4075 ms
+2020-12-25 23:18:56  [ restartedMain:5811 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:18:57  [ restartedMain:6436 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:18:57  [ restartedMain:6721 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:18:57  [ restartedMain:7045 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:18:57  [ restartedMain:7149 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:18:57  [ restartedMain:7219 ] - [ INFO ]  Started DemoApplication in 7.626 seconds (JVM running for 9.477)
+2020-12-25 23:19:34  [ http-nio-8080-exec-2:44162 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 23:19:34  [ http-nio-8080-exec-2:44166 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-25 23:19:35  [ http-nio-8080-exec-2:44940 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 23:19:35  [ http-nio-8080-exec-2:45209 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 23:25:22  [ http-nio-8080-exec-6:391449 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 23:25:22  [ http-nio-8080-exec-6:391452 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 23:26:11  [ http-nio-8080-exec-5:441000 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 23:26:11  [ http-nio-8080-exec-5:441002 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 23:26:15  [ http-nio-8080-exec-2:444326 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 23:26:15  [ http-nio-8080-exec-2:444328 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 23:26:18  [ http-nio-8080-exec-6:447787 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 23:26:18  [ http-nio-8080-exec-6:447790 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 23:32:16  [ Thread-18:805842 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:32:16  [ Thread-18:805843 ] - [ INFO ]  HikariPool-1 - Shutdown initiated...
+2020-12-25 23:32:16  [ Thread-18:805860 ] - [ INFO ]  HikariPool-1 - Shutdown completed.
+2020-12-25 23:32:16  [ restartedMain:806064 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:32:16  [ restartedMain:806066 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:32:16  [ restartedMain:806080 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 1952 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:32:16  [ restartedMain:806081 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:32:17  [ restartedMain:806628 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:32:17  [ restartedMain:806807 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 721 ms
+2020-12-25 23:32:17  [ restartedMain:807016 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:32:17  [ restartedMain:807039 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:32:17  [ restartedMain:807076 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:32:17  [ restartedMain:807129 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:32:17  [ restartedMain:807149 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:32:17  [ restartedMain:807164 ] - [ INFO ]  Started DemoApplication in 1.141 seconds (JVM running for 809.421)
+2020-12-25 23:32:17  [ restartedMain:807166 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-25 23:35:32  [ Thread-25:1001745 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:35:32  [ restartedMain:1001924 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:35:32  [ restartedMain:1001925 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:35:32  [ restartedMain:1001935 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 1952 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:35:32  [ restartedMain:1001936 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:35:33  [ restartedMain:1002488 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:35:33  [ restartedMain:1002615 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 675 ms
+2020-12-25 23:35:33  [ restartedMain:1002699 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController': Unsatisfied dependency expressed through field 'newsVoteService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'newsVoteServiceImpl' defined in file [C:\Users\Kitcham\IdeaProjects\demo\target\classes\com\example\demo\service\NewsVoteServiceImpl.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.demo.service.NewsVoteServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@49e6fe1b]
+2020-12-25 23:35:33  [ restartedMain:1002758 ] - [ ERROR ]  Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articleController': Unsatisfied dependency expressed through field 'newsVoteService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'newsVoteServiceImpl' defined in file [C:\Users\Kitcham\IdeaProjects\demo\target\classes\com\example\demo\service\NewsVoteServiceImpl.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.demo.service.NewsVoteServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@49e6fe1b]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'newsVoteServiceImpl' defined in file [C:\Users\Kitcham\IdeaProjects\demo\target\classes\com\example\demo\service\NewsVoteServiceImpl.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.demo.service.NewsVoteServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@49e6fe1b]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:586)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 25 more
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.demo.service.NewsVoteServiceImpl] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@49e6fe1b]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:737)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:669)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:366)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:347)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:295)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	... 34 more
+Caused by: java.lang.NoClassDefFoundError: Lcom/example/demo/mapper/NewsVoteMapper;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:732)
+	... 40 more
+Caused by: java.lang.ClassNotFoundException: com.example.demo.mapper.NewsVoteMapper
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 44 more
+2020-12-25 23:36:24  [ restartedMain:1053732 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:36:24  [ restartedMain:1053734 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:36:24  [ restartedMain:1053748 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 1952 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:36:24  [ restartedMain:1053750 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:36:25  [ restartedMain:1054657 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:36:25  [ restartedMain:1054807 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1050 ms
+2020-12-25 23:36:25  [ restartedMain:1055063 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:36:25  [ restartedMain:1055090 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:36:25  [ restartedMain:1055134 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:36:25  [ restartedMain:1055205 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:36:25  [ restartedMain:1055239 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:36:25  [ restartedMain:1055260 ] - [ INFO ]  Started DemoApplication in 1.575 seconds (JVM running for 1057.517)
+2020-12-25 23:36:25  [ restartedMain:1055263 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-25 23:40:13  [ Thread-30:1283038 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:40:13  [ restartedMain:1283252 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:40:13  [ restartedMain:1283253 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:40:13  [ restartedMain:1283263 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 1952 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:40:13  [ restartedMain:1283263 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:40:14  [ restartedMain:1283744 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:40:14  [ restartedMain:1283865 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 598 ms
+2020-12-25 23:40:14  [ restartedMain:1284070 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:40:14  [ restartedMain:1284094 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:40:14  [ restartedMain:1284127 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:40:14  [ restartedMain:1284173 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:40:14  [ restartedMain:1284190 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:40:14  [ restartedMain:1284207 ] - [ INFO ]  Started DemoApplication in 0.988 seconds (JVM running for 1286.465)
+2020-12-25 23:40:14  [ restartedMain:1284209 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-25 23:40:30  [ Thread-38:1300136 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:40:31  [ restartedMain:1300307 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:40:31  [ restartedMain:1300308 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:40:31  [ restartedMain:1300318 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 1952 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:40:31  [ restartedMain:1300318 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:40:31  [ restartedMain:1300746 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:40:31  [ restartedMain:1300865 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 542 ms
+2020-12-25 23:40:31  [ restartedMain:1301026 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:40:31  [ restartedMain:1301045 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:40:31  [ restartedMain:1301076 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:40:31  [ restartedMain:1301146 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:40:31  [ restartedMain:1301190 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:40:31  [ restartedMain:1301260 ] - [ INFO ]  Started DemoApplication in 0.99 seconds (JVM running for 1303.518)
+2020-12-25 23:40:31  [ restartedMain:1301266 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-25 23:41:58  [ background-preinit:197 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 23:41:58  [ restartedMain:259 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 24440 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:41:58  [ restartedMain:261 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:41:59  [ restartedMain:361 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:41:59  [ restartedMain:362 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:42:00  [ restartedMain:2260 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:42:01  [ restartedMain:2727 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2362 ms
+2020-12-25 23:42:02  [ restartedMain:3735 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:42:02  [ restartedMain:3991 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:42:02  [ restartedMain:4091 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:42:02  [ restartedMain:4324 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:42:03  [ restartedMain:4403 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:42:03  [ restartedMain:4450 ] - [ INFO ]  Started DemoApplication in 4.745 seconds (JVM running for 6.201)
+2020-12-25 23:42:45  [ background-preinit:197 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 23:42:45  [ restartedMain:280 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 19268 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:42:45  [ restartedMain:282 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:42:45  [ restartedMain:386 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:42:45  [ restartedMain:388 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:42:47  [ restartedMain:2439 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:42:48  [ restartedMain:2957 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2567 ms
+2020-12-25 23:42:49  [ restartedMain:3812 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:42:49  [ restartedMain:4040 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:42:49  [ restartedMain:4127 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:42:49  [ restartedMain:4377 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:42:49  [ restartedMain:4457 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:42:49  [ restartedMain:4502 ] - [ INFO ]  Started DemoApplication in 4.952 seconds (JVM running for 6.301)
+2020-12-25 23:42:49  [ http-nio-8080-exec-1:4555 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 23:42:49  [ http-nio-8080-exec-1:4559 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-25 23:42:50  [ http-nio-8080-exec-8:5302 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 23:42:50  [ http-nio-8080-exec-8:5505 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 23:42:50  [ http-nio-8080-exec-9:5733 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 23:42:50  [ http-nio-8080-exec-9:5736 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 23:42:56  [ http-nio-8080-exec-7:11228 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-25 23:42:56  [ http-nio-8080-exec-7:11230 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-25 23:42:59  [ http-nio-8080-exec-3:14213 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleAttitudeException: 点赞失败
+2020-12-25 23:42:59  [ http-nio-8080-exec-3:14215 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleAttitudeException: 点赞失败]
+2020-12-25 23:44:15  [ Thread-14:90700 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:44:15  [ Thread-14:90701 ] - [ INFO ]  HikariPool-1 - Shutdown initiated...
+2020-12-25 23:44:15  [ Thread-14:90720 ] - [ INFO ]  HikariPool-1 - Shutdown completed.
+2020-12-25 23:44:16  [ restartedMain:90955 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:44:16  [ restartedMain:90957 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:44:16  [ restartedMain:90970 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 19268 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:44:16  [ restartedMain:90971 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:44:16  [ restartedMain:91382 ] - [ WARN ]  No MyBatis mapper was found in '[com.example.demo.mapper]' package. Please check your configuration.
+2020-12-25 23:44:16  [ restartedMain:91533 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:44:16  [ restartedMain:91730 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 753 ms
+2020-12-25 23:44:17  [ restartedMain:91879 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:44:17  [ restartedMain:91906 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:44:17  [ restartedMain:91953 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:44:17  [ restartedMain:92062 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:44:17  [ restartedMain:92087 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:44:17  [ restartedMain:92106 ] - [ INFO ]  Started DemoApplication in 1.198 seconds (JVM running for 93.904)
+2020-12-25 23:44:17  [ restartedMain:92108 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-25 23:44:25  [ background-preinit:217 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-25 23:44:25  [ restartedMain:262 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 7320 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-25 23:44:25  [ restartedMain:264 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-25 23:44:25  [ restartedMain:350 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-25 23:44:25  [ restartedMain:351 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-25 23:44:27  [ restartedMain:2145 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-25 23:44:27  [ restartedMain:2524 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2172 ms
+2020-12-25 23:44:27  [ restartedMain:3054 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-25 23:44:28  [ restartedMain:3232 ] - [ INFO ]  Adding welcome page template: index
+2020-12-25 23:44:28  [ restartedMain:3323 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-25 23:44:28  [ restartedMain:3532 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-25 23:44:28  [ restartedMain:3605 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-25 23:44:28  [ restartedMain:3659 ] - [ INFO ]  Started DemoApplication in 3.948 seconds (JVM running for 5.001)
+2020-12-25 23:44:41  [ http-nio-8080-exec-1:16200 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-25 23:44:41  [ http-nio-8080-exec-1:16202 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-25 23:44:41  [ http-nio-8080-exec-1:16778 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-25 23:44:41  [ http-nio-8080-exec-1:16954 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-25 23:44:43  [ http-nio-8080-exec-5:18784 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleAttitudeException: 点赞失败
+2020-12-25 23:44:43  [ http-nio-8080-exec-5:18787 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleAttitudeException: 点赞失败]
+2020-12-25 23:47:21  [ http-nio-8080-exec-6:176295 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleAttitudeException: 反对失败
+2020-12-25 23:47:21  [ http-nio-8080-exec-6:176297 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleAttitudeException: 反对失败]

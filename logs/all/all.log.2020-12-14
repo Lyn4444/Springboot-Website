@@ -1,0 +1,22 @@
+2020-12-14 00:00:14  [ HikariPool-1 housekeeper:26195593 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:00:14  [ HikariPool-1 housekeeper:26195600 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:00:44  [ HikariPool-1 housekeeper:26225611 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:00:44  [ HikariPool-1 housekeeper:26225611 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:01:14  [ HikariPool-1 housekeeper:26255621 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:01:14  [ HikariPool-1 housekeeper:26255622 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:01:45  [ HikariPool-1 housekeeper:26285645 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:01:45  [ HikariPool-1 housekeeper:26285645 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:02:15  [ HikariPool-1 housekeeper:26315652 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:02:15  [ HikariPool-1 housekeeper:26315652 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:02:45  [ HikariPool-1 housekeeper:26345665 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:02:45  [ HikariPool-1 housekeeper:26345665 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:03:15  [ HikariPool-1 housekeeper:26375674 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:03:15  [ HikariPool-1 housekeeper:26375674 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:03:45  [ HikariPool-1 housekeeper:26405684 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:03:45  [ HikariPool-1 housekeeper:26405684 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:04:15  [ HikariPool-1 housekeeper:26435698 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:04:15  [ HikariPool-1 housekeeper:26435698 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:04:45  [ HikariPool-1 housekeeper:26465710 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:04:45  [ HikariPool-1 housekeeper:26465710 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-12-14 00:05:15  [ HikariPool-1 housekeeper:26495726 ] - [ DEBUG ]  HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-12-14 00:05:15  [ HikariPool-1 housekeeper:26495726 ] - [ DEBUG ]  HikariPool-1 - Fill pool skipped, pool is at sufficient level.

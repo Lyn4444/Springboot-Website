@@ -1,0 +1,725 @@
+2020-12-22 20:31:50  [ restartedMain:611 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 36808 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 20:31:50  [ restartedMain:617 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 20:31:50  [ restartedMain:763 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 20:31:50  [ restartedMain:764 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 20:31:53  [ restartedMain:3773 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 20:31:54  [ restartedMain:4334 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3568 ms
+2020-12-22 20:31:54  [ restartedMain:5020 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 20:31:55  [ restartedMain:5268 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 20:31:55  [ restartedMain:5499 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 20:31:55  [ restartedMain:5852 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 20:31:55  [ restartedMain:5980 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 20:31:55  [ restartedMain:6051 ] - [ INFO ]  Started DemoApplication in 6.825 seconds (JVM running for 9.519)
+2020-12-22 20:32:08  [ http-nio-8080-exec-1:18329 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 20:32:08  [ http-nio-8080-exec-1:18334 ] - [ INFO ]  Completed initialization in 5 ms
+2020-12-22 20:32:09  [ http-nio-8080-exec-1:19330 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 20:32:09  [ http-nio-8080-exec-1:19828 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 20:39:56  [ restartedMain:548 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 26380 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 20:39:56  [ restartedMain:551 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 20:39:56  [ restartedMain:694 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 20:39:56  [ restartedMain:696 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 20:39:59  [ restartedMain:3431 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 20:40:00  [ restartedMain:4124 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3424 ms
+2020-12-22 20:40:01  [ restartedMain:4905 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 20:40:01  [ restartedMain:5036 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 20:40:01  [ restartedMain:5156 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 20:40:01  [ restartedMain:5368 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 20:40:01  [ restartedMain:5449 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 20:40:01  [ restartedMain:5512 ] - [ INFO ]  Started DemoApplication in 6.21 seconds (JVM running for 8.618)
+2020-12-22 20:40:03  [ http-nio-8080-exec-1:6841 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 20:40:03  [ http-nio-8080-exec-1:6844 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-22 20:40:04  [ http-nio-8080-exec-8:7991 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 20:40:04  [ http-nio-8080-exec-8:8272 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 20:40:46  [ restartedMain:286 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 23676 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 20:40:46  [ restartedMain:288 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 20:40:47  [ restartedMain:370 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 20:40:47  [ restartedMain:371 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 20:40:49  [ restartedMain:2993 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 20:40:50  [ restartedMain:3500 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3127 ms
+2020-12-22 20:40:50  [ restartedMain:4257 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 20:40:51  [ restartedMain:4376 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 20:40:51  [ restartedMain:4481 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 20:40:51  [ restartedMain:4663 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 20:40:51  [ restartedMain:4732 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 20:40:51  [ restartedMain:4785 ] - [ INFO ]  Started DemoApplication in 5.139 seconds (JVM running for 6.79)
+2020-12-22 20:40:51  [ http-nio-8080-exec-1:4983 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 20:40:51  [ http-nio-8080-exec-1:4985 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 20:40:56  [ http-nio-8080-exec-10:9719 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 20:40:56  [ http-nio-8080-exec-10:9946 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 20:43:54  [ restartedMain:285 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 15916 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 20:43:54  [ restartedMain:287 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 20:43:54  [ restartedMain:373 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 20:43:54  [ restartedMain:374 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 20:43:56  [ restartedMain:2105 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 20:43:56  [ restartedMain:2484 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2107 ms
+2020-12-22 20:43:57  [ restartedMain:2942 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 20:43:57  [ restartedMain:3041 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 20:43:57  [ restartedMain:3129 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 20:43:57  [ restartedMain:3307 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 20:43:57  [ restartedMain:3366 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 20:43:57  [ restartedMain:3408 ] - [ INFO ]  Started DemoApplication in 3.765 seconds (JVM running for 4.914)
+2020-12-22 20:43:59  [ http-nio-8080-exec-2:4731 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 20:43:59  [ http-nio-8080-exec-2:4734 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 20:43:59  [ http-nio-8080-exec-9:5344 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 20:43:59  [ http-nio-8080-exec-9:5603 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 20:53:41  [ restartedMain:290 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10440 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 20:53:41  [ restartedMain:292 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 20:53:41  [ restartedMain:370 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 20:53:41  [ restartedMain:371 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 20:53:45  [ restartedMain:4073 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 20:53:46  [ restartedMain:4662 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 4289 ms
+2020-12-22 20:53:47  [ restartedMain:5520 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 20:53:47  [ restartedMain:5650 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 20:53:47  [ restartedMain:5754 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 20:53:47  [ restartedMain:5938 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 20:53:47  [ restartedMain:6000 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 20:53:47  [ restartedMain:6056 ] - [ INFO ]  Started DemoApplication in 6.4 seconds (JVM running for 8.283)
+2020-12-22 20:53:47  [ http-nio-8080-exec-1:6240 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 20:53:47  [ http-nio-8080-exec-1:6242 ] - [ INFO ]  Completed initialization in 1 ms
+2020-12-22 20:53:48  [ http-nio-8080-exec-9:6884 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 20:53:48  [ http-nio-8080-exec-9:7102 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 21:05:52  [ http-nio-8080-exec-6:730729 ] - [ WARN ]  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-12-22 21:10:46  [ Thread-6:1025199 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:10:46  [ Thread-6:1025200 ] - [ INFO ]  HikariPool-1 - Shutdown initiated...
+2020-12-22 21:10:46  [ Thread-6:1025232 ] - [ INFO ]  HikariPool-1 - Shutdown completed.
+2020-12-22 21:10:46  [ restartedMain:1025487 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:10:46  [ restartedMain:1025488 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:10:47  [ restartedMain:1025498 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10440 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:10:47  [ restartedMain:1025499 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:10:47  [ restartedMain:1026210 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:10:47  [ restartedMain:1026366 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 863 ms
+2020-12-22 21:10:48  [ restartedMain:1026656 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:10:48  [ restartedMain:1026787 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:10:48  [ restartedMain:1026914 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:10:48  [ restartedMain:1027065 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:10:48  [ restartedMain:1027120 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:10:48  [ restartedMain:1027145 ] - [ INFO ]  Started DemoApplication in 1.691 seconds (JVM running for 1029.373)
+2020-12-22 21:10:48  [ restartedMain:1027150 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-22 21:12:24  [ Thread-9:1123438 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:12:25  [ restartedMain:1123674 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:12:25  [ restartedMain:1123675 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:12:25  [ restartedMain:1123690 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10440 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:12:25  [ restartedMain:1123690 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:12:25  [ restartedMain:1124385 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:12:26  [ restartedMain:1124559 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 860 ms
+2020-12-22 21:12:26  [ restartedMain:1124812 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:12:26  [ restartedMain:1124855 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:12:26  [ restartedMain:1124942 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:12:26  [ restartedMain:1125026 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:12:26  [ restartedMain:1125057 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:12:26  [ restartedMain:1125076 ] - [ INFO ]  Started DemoApplication in 1.455 seconds (JVM running for 1127.303)
+2020-12-22 21:12:26  [ restartedMain:1125081 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-22 21:15:10  [ Thread-14:1289219 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:15:10  [ restartedMain:1289485 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:15:10  [ restartedMain:1289486 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:15:11  [ restartedMain:1289501 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10440 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:15:11  [ restartedMain:1289503 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:15:11  [ restartedMain:1290296 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:15:11  [ restartedMain:1290483 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 974 ms
+2020-12-22 21:15:12  [ restartedMain:1290692 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:15:12  [ restartedMain:1290728 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:15:12  [ restartedMain:1290786 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:15:12  [ restartedMain:1290863 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:15:12  [ restartedMain:1290887 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:15:12  [ restartedMain:1290904 ] - [ INFO ]  Started DemoApplication in 1.456 seconds (JVM running for 1293.132)
+2020-12-22 21:15:12  [ restartedMain:1290907 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-22 21:20:59  [ Thread-19:1638396 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:21:00  [ restartedMain:1638734 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:21:00  [ restartedMain:1638737 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:21:00  [ restartedMain:1638762 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10440 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:21:00  [ restartedMain:1638763 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:21:01  [ restartedMain:1639686 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:21:01  [ restartedMain:1639993 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1215 ms
+2020-12-22 21:21:02  [ restartedMain:1640679 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:21:02  [ restartedMain:1640853 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:21:02  [ restartedMain:1640904 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:21:02  [ restartedMain:1640987 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:21:02  [ restartedMain:1641024 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:21:02  [ restartedMain:1641045 ] - [ INFO ]  Started DemoApplication in 2.373 seconds (JVM running for 1643.272)
+2020-12-22 21:21:02  [ restartedMain:1641047 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-22 21:22:29  [ Thread-24:1728397 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:22:30  [ restartedMain:1728627 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:22:30  [ restartedMain:1728628 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:22:30  [ restartedMain:1728648 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10440 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:22:30  [ restartedMain:1728649 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:22:30  [ restartedMain:1729484 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:22:31  [ restartedMain:1729741 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1081 ms
+2020-12-22 21:22:31  [ restartedMain:1730118 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:22:31  [ restartedMain:1730162 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:22:31  [ restartedMain:1730290 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:22:31  [ restartedMain:1730393 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:22:31  [ restartedMain:1730440 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:22:31  [ restartedMain:1730462 ] - [ INFO ]  Started DemoApplication in 1.897 seconds (JVM running for 1732.689)
+2020-12-22 21:22:31  [ restartedMain:1730464 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-22 21:23:26  [ Thread-29:1784623 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:23:26  [ restartedMain:1785092 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:23:26  [ restartedMain:1785096 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:23:26  [ restartedMain:1785149 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10440 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:23:26  [ restartedMain:1785151 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:23:28  [ restartedMain:1786747 ] - [ WARN ]  No MyBatis mapper was found in '[com.example.demo.mapper]' package. Please check your configuration.
+2020-12-22 21:23:28  [ restartedMain:1787073 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:23:29  [ restartedMain:1787510 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2346 ms
+2020-12-22 21:23:29  [ restartedMain:1788213 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:23:29  [ restartedMain:1788295 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:23:29  [ restartedMain:1788441 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:23:30  [ restartedMain:1788856 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:23:30  [ restartedMain:1788928 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:23:30  [ restartedMain:1788962 ] - [ INFO ]  Started DemoApplication in 3.972 seconds (JVM running for 1791.19)
+2020-12-22 21:23:30  [ restartedMain:1788968 ] - [ INFO ]  Condition evaluation unchanged
+2020-12-22 21:36:12  [ background-preinit:484 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 21:36:12  [ restartedMain:626 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 30888 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:36:12  [ restartedMain:629 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:36:12  [ restartedMain:777 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:36:12  [ restartedMain:778 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:36:16  [ restartedMain:4201 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:36:16  [ restartedMain:4837 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 4056 ms
+2020-12-22 21:36:17  [ restartedMain:5656 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:36:17  [ restartedMain:5987 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:36:18  [ restartedMain:6186 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:36:18  [ restartedMain:6649 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:36:18  [ restartedMain:6768 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:36:18  [ restartedMain:6830 ] - [ INFO ]  Started DemoApplication in 7.428 seconds (JVM running for 9.587)
+2020-12-22 21:36:19  [ http-nio-8080-exec-2:7140 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 21:36:19  [ http-nio-8080-exec-2:7149 ] - [ INFO ]  Completed initialization in 8 ms
+2020-12-22 21:36:20  [ http-nio-8080-exec-2:8440 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 21:36:20  [ http-nio-8080-exec-2:8664 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 21:36:34  [ http-nio-8080-exec-3:22388 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.RangeException: 订阅已经存在或者输入参数错误
+2020-12-22 21:36:34  [ http-nio-8080-exec-3:22399 ] - [ WARN ]  Resolved [com.example.demo.exception.RangeException: 订阅已经存在或者输入参数错误]
+2020-12-22 21:40:43  [ background-preinit:227 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 21:40:43  [ restartedMain:279 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 40304 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:40:43  [ restartedMain:281 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:40:43  [ restartedMain:363 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:40:43  [ restartedMain:363 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:40:45  [ restartedMain:2256 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:40:45  [ restartedMain:2709 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2344 ms
+2020-12-22 21:40:46  [ restartedMain:3435 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:40:46  [ restartedMain:3636 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:40:46  [ restartedMain:3756 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:40:47  [ restartedMain:3963 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:40:47  [ restartedMain:4027 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:40:47  [ restartedMain:4066 ] - [ INFO ]  Started DemoApplication in 4.738 seconds (JVM running for 7.062)
+2020-12-22 21:40:50  [ http-nio-8080-exec-1:7726 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 21:40:50  [ http-nio-8080-exec-1:7728 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 21:40:51  [ http-nio-8080-exec-8:8405 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 21:40:51  [ http-nio-8080-exec-8:8631 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 21:47:54  [ background-preinit:428 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 21:47:54  [ restartedMain:593 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 11600 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:47:54  [ restartedMain:595 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:47:54  [ restartedMain:720 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:47:54  [ restartedMain:721 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:47:58  [ restartedMain:4297 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:47:59  [ restartedMain:5183 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 4459 ms
+2020-12-22 21:48:00  [ restartedMain:6278 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:48:00  [ restartedMain:6661 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:48:00  [ restartedMain:6783 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:48:00  [ restartedMain:7011 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:48:00  [ restartedMain:7084 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:48:01  [ restartedMain:7124 ] - [ INFO ]  Started DemoApplication in 8.013 seconds (JVM running for 10.745)
+2020-12-22 21:48:01  [ http-nio-8080-exec-1:7227 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 21:48:01  [ http-nio-8080-exec-1:7230 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 21:48:01  [ http-nio-8080-exec-9:7856 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 21:48:02  [ http-nio-8080-exec-9:8125 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 21:48:13  [ http-nio-8080-exec-7:19988 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:13  [ http-nio-8080-exec-7:19994 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:21  [ http-nio-8080-exec-1:27504 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.deleteUserSubscription(javax.servlet.http.HttpSession,com.example.demo.entity.JsonSubscription) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:21  [ http-nio-8080-exec-1:27507 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.deleteUserSubscription(javax.servlet.http.HttpSession,com.example.demo.entity.JsonSubscription) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:22  [ http-nio-8080-exec-5:28762 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:22  [ http-nio-8080-exec-5:28765 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:23  [ http-nio-8080-exec-4:29156 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:23  [ http-nio-8080-exec-4:29158 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:23  [ http-nio-8080-exec-10:29557 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:23  [ http-nio-8080-exec-10:29560 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:23  [ http-nio-8080-exec-3:29929 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:23  [ http-nio-8080-exec-3:29932 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:24  [ http-nio-8080-exec-2:30310 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:24  [ http-nio-8080-exec-2:30313 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:24  [ http-nio-8080-exec-9:30693 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:24  [ http-nio-8080-exec-9:30697 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:24  [ http-nio-8080-exec-8:31070 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:24  [ http-nio-8080-exec-8:31072 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.insertUserSubscription(com.example.demo.entity.JsonSubscription,javax.servlet.http.HttpSession) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:48:25  [ http-nio-8080-exec-6:31421 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.deleteUserSubscription(javax.servlet.http.HttpSession,com.example.demo.entity.JsonSubscription) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]]
+2020-12-22 21:48:25  [ http-nio-8080-exec-6:31422 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.deleteUserSubscription(javax.servlet.http.HttpSession,com.example.demo.entity.JsonSubscription) throws com.example.demo.exception.RangeException: [Field error in object 'jsonSubscription' on field 'type': rejected value [null]; codes [NotEmpty.jsonSubscription.type,NotEmpty.type,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonSubscription.type,type]; arguments []; default message [type]]; default message [type不能为空]] ]
+2020-12-22 21:49:15  [ background-preinit:694 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 21:49:15  [ restartedMain:773 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 35644 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:49:15  [ restartedMain:777 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:49:15  [ restartedMain:1061 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:49:15  [ restartedMain:1061 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:49:28  [ background-preinit:301 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 21:49:28  [ restartedMain:364 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 9672 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 21:49:28  [ restartedMain:366 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 21:49:28  [ restartedMain:471 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 21:49:28  [ restartedMain:472 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 21:49:30  [ restartedMain:2696 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 21:49:30  [ restartedMain:3244 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2770 ms
+2020-12-22 21:49:31  [ restartedMain:3963 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 21:49:31  [ restartedMain:4086 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 21:49:32  [ restartedMain:4286 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 21:49:32  [ restartedMain:4458 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 21:49:32  [ restartedMain:4523 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 21:49:32  [ restartedMain:4562 ] - [ INFO ]  Started DemoApplication in 5.014 seconds (JVM running for 6.671)
+2020-12-22 21:49:34  [ http-nio-8080-exec-1:7154 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 21:49:34  [ http-nio-8080-exec-1:7157 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 21:49:35  [ http-nio-8080-exec-1:8191 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 21:49:36  [ http-nio-8080-exec-1:8429 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 21:55:14  [ http-nio-8080-exec-5:347053 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]]
+2020-12-22 21:55:14  [ http-nio-8080-exec-5:347058 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]] ]
+2020-12-22 21:55:20  [ http-nio-8080-exec-3:353094 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]]
+2020-12-22 21:55:20  [ http-nio-8080-exec-3:353096 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]] ]
+2020-12-22 21:56:24  [ http-nio-8080-exec-8:417006 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]]
+2020-12-22 21:56:24  [ http-nio-8080-exec-8:417010 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]] ]
+2020-12-22 21:57:00  [ http-nio-8080-exec-9:453102 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]]
+2020-12-22 21:57:00  [ http-nio-8080-exec-9:453109 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]] ]
+2020-12-22 21:58:08  [ http-nio-8080-exec-1:521087 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]]
+2020-12-22 21:58:08  [ http-nio-8080-exec-1:521090 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]] ]
+2020-12-22 22:05:43  [ http-nio-8080-exec-3:976123 ] - [ ERROR ]  发生一个异常：org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]]
+2020-12-22 22:05:43  [ http-nio-8080-exec-3:976126 ] - [ WARN ]  Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.demo.helper.model.ResultModel com.example.demo.controller.MainPageController.getInfomationFlowCardByKeyword(com.example.demo.entity.JsonKeyword) throws javax.validation.ValidationException: [Field error in object 'jsonKeyword' on field 'keyWord': rejected value [null]; codes [NotEmpty.jsonKeyword.keyWord,NotEmpty.keyWord,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [jsonKeyword.keyWord,keyWord]; arguments []; default message [keyWord]]; default message [keyWord不能为空]] ]
+2020-12-22 22:08:42  [ background-preinit:202 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:08:42  [ restartedMain:260 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 20904 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:08:42  [ restartedMain:262 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:08:42  [ restartedMain:344 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:08:42  [ restartedMain:344 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:08:44  [ restartedMain:2333 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:08:44  [ restartedMain:2892 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2546 ms
+2020-12-22 22:08:45  [ restartedMain:3669 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:08:45  [ restartedMain:3899 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:08:46  [ restartedMain:3982 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:08:46  [ restartedMain:4161 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:08:46  [ restartedMain:4229 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:08:46  [ restartedMain:4266 ] - [ INFO ]  Started DemoApplication in 4.581 seconds (JVM running for 6.097)
+2020-12-22 22:08:46  [ http-nio-8080-exec-3:4901 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:08:46  [ http-nio-8080-exec-3:4906 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-22 22:08:47  [ http-nio-8080-exec-2:5581 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:08:47  [ http-nio-8080-exec-2:5829 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:12:13  [ background-preinit:256 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:12:13  [ restartedMain:331 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 41876 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:12:13  [ restartedMain:333 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:12:13  [ restartedMain:450 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:12:13  [ restartedMain:451 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:12:15  [ restartedMain:2372 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:12:15  [ restartedMain:2840 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2387 ms
+2020-12-22 22:12:16  [ restartedMain:3605 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:12:16  [ restartedMain:3824 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:12:16  [ restartedMain:3932 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:12:17  [ restartedMain:4116 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:12:17  [ restartedMain:4181 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:12:17  [ restartedMain:4222 ] - [ INFO ]  Started DemoApplication in 4.705 seconds (JVM running for 7.531)
+2020-12-22 22:12:19  [ http-nio-8080-exec-1:6492 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:12:19  [ http-nio-8080-exec-1:6494 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:12:20  [ http-nio-8080-exec-8:7176 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:12:20  [ http-nio-8080-exec-8:7366 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:14:23  [ background-preinit:220 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:14:23  [ restartedMain:270 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 23464 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:14:23  [ restartedMain:272 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:14:23  [ restartedMain:363 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:14:23  [ restartedMain:364 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:14:25  [ restartedMain:2084 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:14:25  [ restartedMain:2586 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2221 ms
+2020-12-22 22:14:26  [ restartedMain:3237 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:14:26  [ restartedMain:3436 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:14:26  [ restartedMain:3514 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:14:27  [ restartedMain:3686 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:14:27  [ restartedMain:3751 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:14:27  [ restartedMain:3786 ] - [ INFO ]  Started DemoApplication in 4.319 seconds (JVM running for 7.519)
+2020-12-22 22:14:32  [ http-nio-8080-exec-1:9327 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:14:32  [ http-nio-8080-exec-1:9330 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:14:33  [ http-nio-8080-exec-8:9930 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:14:33  [ http-nio-8080-exec-8:10119 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:15:55  [ background-preinit:327 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:15:56  [ restartedMain:390 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 17976 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:15:56  [ restartedMain:392 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:15:56  [ restartedMain:499 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:15:56  [ restartedMain:499 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:15:58  [ restartedMain:3321 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:15:59  [ restartedMain:3903 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3402 ms
+2020-12-22 22:16:00  [ restartedMain:4641 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:16:00  [ restartedMain:4863 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:16:00  [ restartedMain:4946 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:16:00  [ restartedMain:5113 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:16:00  [ restartedMain:5173 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:16:00  [ restartedMain:5208 ] - [ INFO ]  Started DemoApplication in 5.843 seconds (JVM running for 7.718)
+2020-12-22 22:16:03  [ http-nio-8080-exec-1:8034 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:16:03  [ http-nio-8080-exec-1:8036 ] - [ INFO ]  Completed initialization in 1 ms
+2020-12-22 22:16:04  [ http-nio-8080-exec-9:8620 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:16:04  [ http-nio-8080-exec-9:8812 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:16:33  [ background-preinit:228 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:16:33  [ restartedMain:281 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 26640 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:16:33  [ restartedMain:283 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:16:33  [ restartedMain:363 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:16:33  [ restartedMain:364 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:16:35  [ restartedMain:2345 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:16:36  [ restartedMain:2851 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2486 ms
+2020-12-22 22:16:37  [ restartedMain:3555 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:16:37  [ restartedMain:3784 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:16:37  [ restartedMain:3874 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:16:37  [ restartedMain:4083 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:16:37  [ restartedMain:4151 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:16:37  [ restartedMain:4188 ] - [ INFO ]  Started DemoApplication in 4.503 seconds (JVM running for 6.724)
+2020-12-22 22:16:37  [ http-nio-8080-exec-1:4301 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:16:37  [ http-nio-8080-exec-1:4304 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:16:38  [ http-nio-8080-exec-8:4875 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:16:38  [ http-nio-8080-exec-8:5072 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:21:18  [ http-nio-8080-exec-4:284542 ] - [ ERROR ]  发生一个异常：java.lang.NullPointerException
+2020-12-22 22:21:18  [ http-nio-8080-exec-4:284545 ] - [ WARN ]  Resolved [java.lang.NullPointerException]
+2020-12-22 22:21:39  [ http-nio-8080-exec-3:306067 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-22 22:21:39  [ http-nio-8080-exec-3:306071 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-22 22:21:44  [ http-nio-8080-exec-7:310866 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-22 22:21:44  [ http-nio-8080-exec-7:310869 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-22 22:22:00  [ http-nio-8080-exec-1:326851 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-22 22:22:00  [ http-nio-8080-exec-1:326854 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-22 22:25:41  [ http-nio-8080-exec-10:548056 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-22 22:25:41  [ http-nio-8080-exec-10:548061 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-22 22:25:51  [ http-nio-8080-exec-1:558208 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-22 22:25:51  [ http-nio-8080-exec-1:558211 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-22 22:26:11  [ http-nio-8080-exec-6:578126 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 没有这篇新闻
+2020-12-22 22:26:11  [ http-nio-8080-exec-6:578131 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 没有这篇新闻]
+2020-12-22 22:29:04  [ http-nio-8080-exec-9:751453 ] - [ ERROR ]  发生一个异常：org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+2020-12-22 22:29:04  [ http-nio-8080-exec-9:751456 ] - [ WARN ]  Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2020-12-22 22:30:12  [ http-nio-8080-exec-2:818894 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-22 22:30:12  [ http-nio-8080-exec-2:818896 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-22 22:42:23  [ background-preinit:398 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:42:23  [ restartedMain:489 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 9208 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:42:23  [ restartedMain:491 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:42:23  [ restartedMain:611 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:42:23  [ restartedMain:611 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:42:25  [ restartedMain:2731 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:42:26  [ restartedMain:3243 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2630 ms
+2020-12-22 22:42:27  [ restartedMain:3994 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:42:27  [ restartedMain:4188 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:42:27  [ restartedMain:4306 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:42:27  [ restartedMain:4594 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:42:27  [ restartedMain:4673 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:42:27  [ restartedMain:4725 ] - [ INFO ]  Started DemoApplication in 5.703 seconds (JVM running for 8.668)
+2020-12-22 22:42:29  [ http-nio-8080-exec-1:6170 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:42:29  [ http-nio-8080-exec-1:6172 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:42:29  [ http-nio-8080-exec-8:6760 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:42:30  [ http-nio-8080-exec-8:6978 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:43:04  [ background-preinit:211 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:43:04  [ restartedMain:272 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 22404 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:43:04  [ restartedMain:275 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:43:05  [ restartedMain:386 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:43:05  [ restartedMain:387 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:43:07  [ restartedMain:2422 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:43:07  [ restartedMain:2914 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2522 ms
+2020-12-22 22:43:08  [ restartedMain:3734 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:43:08  [ restartedMain:4012 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:43:08  [ restartedMain:4112 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:43:09  [ restartedMain:4303 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:43:09  [ restartedMain:4370 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:43:09  [ restartedMain:4409 ] - [ INFO ]  Started DemoApplication in 4.769 seconds (JVM running for 7.745)
+2020-12-22 22:43:53  [ background-preinit:436 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:43:53  [ restartedMain:475 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 28116 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:43:53  [ restartedMain:477 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:43:53  [ restartedMain:595 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:43:53  [ restartedMain:596 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:43:55  [ restartedMain:2759 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:43:55  [ restartedMain:3257 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2659 ms
+2020-12-22 22:43:56  [ restartedMain:3912 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:43:56  [ restartedMain:4111 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:43:56  [ restartedMain:4194 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:43:56  [ restartedMain:4357 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:43:56  [ restartedMain:4417 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:43:57  [ restartedMain:4453 ] - [ INFO ]  Started DemoApplication in 4.956 seconds (JVM running for 7.258)
+2020-12-22 22:43:58  [ http-nio-8080-exec-1:6016 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:43:58  [ http-nio-8080-exec-1:6019 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-22 22:43:59  [ http-nio-8080-exec-8:6602 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:43:59  [ http-nio-8080-exec-8:6790 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:46:59  [ http-nio-8080-exec-10:186597 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-22 22:46:59  [ http-nio-8080-exec-10:186601 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-22 22:47:33  [ background-preinit:294 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:47:33  [ restartedMain:363 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 30892 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:47:33  [ restartedMain:365 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:47:33  [ restartedMain:497 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:47:33  [ restartedMain:497 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:47:36  [ restartedMain:3311 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:47:36  [ restartedMain:3800 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3301 ms
+2020-12-22 22:47:37  [ restartedMain:4434 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:47:37  [ restartedMain:4619 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:47:37  [ restartedMain:4717 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:47:37  [ restartedMain:4945 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:47:37  [ restartedMain:5017 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:47:37  [ restartedMain:5060 ] - [ INFO ]  Started DemoApplication in 5.52 seconds (JVM running for 8.88)
+2020-12-22 22:47:38  [ http-nio-8080-exec-1:5214 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:47:38  [ http-nio-8080-exec-1:5217 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:47:39  [ http-nio-8080-exec-8:6167 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:47:39  [ http-nio-8080-exec-8:6403 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:49:50  [ background-preinit:206 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:49:50  [ restartedMain:274 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 31904 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:49:50  [ restartedMain:275 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:49:50  [ restartedMain:354 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:49:50  [ restartedMain:354 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:49:52  [ restartedMain:2361 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:49:53  [ restartedMain:2865 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2509 ms
+2020-12-22 22:49:53  [ restartedMain:3675 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:49:54  [ restartedMain:3877 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:49:54  [ restartedMain:3963 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:49:54  [ restartedMain:4151 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:49:54  [ restartedMain:4216 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:49:54  [ restartedMain:4257 ] - [ INFO ]  Started DemoApplication in 4.599 seconds (JVM running for 7.452)
+2020-12-22 22:49:54  [ http-nio-8080-exec-1:4284 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:49:54  [ http-nio-8080-exec-1:4286 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:49:55  [ http-nio-8080-exec-9:5299 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:49:55  [ http-nio-8080-exec-9:5567 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:50:54  [ background-preinit:217 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:50:54  [ restartedMain:271 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 33932 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:50:54  [ restartedMain:273 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:50:55  [ restartedMain:360 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:50:55  [ restartedMain:361 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:50:57  [ restartedMain:2565 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:50:57  [ restartedMain:3041 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2678 ms
+2020-12-22 22:50:58  [ restartedMain:3741 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:50:58  [ restartedMain:3929 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:50:58  [ restartedMain:4023 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:50:58  [ restartedMain:4192 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:50:58  [ restartedMain:4257 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:50:59  [ restartedMain:4292 ] - [ INFO ]  Started DemoApplication in 4.63 seconds (JVM running for 7.21)
+2020-12-22 22:50:59  [ http-nio-8080-exec-2:4362 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:50:59  [ http-nio-8080-exec-2:4364 ] - [ INFO ]  Completed initialization in 1 ms
+2020-12-22 22:50:59  [ http-nio-8080-exec-1:5085 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:51:00  [ http-nio-8080-exec-1:5326 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:51:45  [ background-preinit:426 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:51:45  [ restartedMain:507 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 21192 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:51:45  [ restartedMain:509 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:51:45  [ restartedMain:669 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:51:45  [ restartedMain:672 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:51:47  [ restartedMain:2788 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:51:48  [ restartedMain:3269 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2595 ms
+2020-12-22 22:51:49  [ restartedMain:3928 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:51:49  [ restartedMain:4146 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:51:49  [ restartedMain:4254 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:51:49  [ restartedMain:4413 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:51:49  [ restartedMain:4475 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:51:49  [ restartedMain:4512 ] - [ INFO ]  Started DemoApplication in 5.011 seconds (JVM running for 7.733)
+2020-12-22 22:51:49  [ http-nio-8080-exec-1:4543 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:51:49  [ http-nio-8080-exec-1:4546 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:51:50  [ http-nio-8080-exec-9:5321 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:51:50  [ http-nio-8080-exec-9:5554 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:53:10  [ background-preinit:239 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:53:10  [ restartedMain:294 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 8464 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:53:10  [ restartedMain:295 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:53:11  [ restartedMain:384 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:53:11  [ restartedMain:385 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:53:12  [ restartedMain:2204 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:53:13  [ restartedMain:2658 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2271 ms
+2020-12-22 22:53:13  [ restartedMain:3315 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:53:14  [ restartedMain:3535 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:53:14  [ restartedMain:3649 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:53:14  [ restartedMain:3912 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:53:14  [ restartedMain:3988 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:53:14  [ restartedMain:4032 ] - [ INFO ]  Started DemoApplication in 4.479 seconds (JVM running for 7.073)
+2020-12-22 22:53:14  [ http-nio-8080-exec-1:4072 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:53:14  [ http-nio-8080-exec-1:4075 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-22 22:53:15  [ http-nio-8080-exec-9:4901 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:53:15  [ http-nio-8080-exec-9:5142 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:54:10  [ background-preinit:261 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:54:10  [ restartedMain:325 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 37884 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:54:10  [ restartedMain:327 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:54:10  [ restartedMain:415 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:54:10  [ restartedMain:416 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:54:12  [ restartedMain:2355 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:54:13  [ restartedMain:2860 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2443 ms
+2020-12-22 22:54:13  [ restartedMain:3565 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:54:14  [ restartedMain:3816 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:54:14  [ restartedMain:3914 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:54:14  [ restartedMain:4123 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:54:14  [ restartedMain:4195 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:54:14  [ restartedMain:4234 ] - [ INFO ]  Started DemoApplication in 4.778 seconds (JVM running for 7.721)
+2020-12-22 22:54:15  [ http-nio-8080-exec-1:5186 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:54:15  [ http-nio-8080-exec-1:5189 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:54:16  [ http-nio-8080-exec-8:5892 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:54:16  [ http-nio-8080-exec-8:6150 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:54:38  [ background-preinit:228 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:54:38  [ restartedMain:294 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 41140 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:54:38  [ restartedMain:296 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:54:38  [ restartedMain:376 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:54:38  [ restartedMain:376 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:54:40  [ restartedMain:2515 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:54:41  [ restartedMain:3131 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2753 ms
+2020-12-22 22:54:42  [ restartedMain:3941 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:54:42  [ restartedMain:4154 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:54:42  [ restartedMain:4251 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:54:42  [ restartedMain:4422 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:54:42  [ restartedMain:4479 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:54:42  [ restartedMain:4518 ] - [ INFO ]  Started DemoApplication in 4.855 seconds (JVM running for 7.295)
+2020-12-22 22:54:43  [ http-nio-8080-exec-1:5479 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:54:43  [ http-nio-8080-exec-1:5482 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:54:44  [ http-nio-8080-exec-3:6016 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:54:44  [ http-nio-8080-exec-3:6206 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:56:56  [ background-preinit:272 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:56:56  [ restartedMain:351 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 37968 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:56:56  [ restartedMain:353 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:56:56  [ restartedMain:454 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:56:56  [ restartedMain:455 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:56:58  [ restartedMain:2723 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:56:59  [ restartedMain:3231 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2774 ms
+2020-12-22 22:57:00  [ restartedMain:4038 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:57:00  [ restartedMain:4259 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:57:00  [ restartedMain:4360 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:57:00  [ restartedMain:4535 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:57:00  [ restartedMain:4618 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:57:00  [ restartedMain:4661 ] - [ INFO ]  Started DemoApplication in 5.122 seconds (JVM running for 7.979)
+2020-12-22 22:57:00  [ http-nio-8080-exec-1:4771 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:57:00  [ http-nio-8080-exec-1:4775 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-22 22:57:01  [ http-nio-8080-exec-8:5438 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:57:01  [ http-nio-8080-exec-8:5628 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:57:35  [ background-preinit:282 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:57:36  [ restartedMain:338 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 40376 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:57:36  [ restartedMain:340 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:57:36  [ restartedMain:424 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:57:36  [ restartedMain:424 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:57:37  [ restartedMain:2285 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:57:38  [ restartedMain:2768 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2343 ms
+2020-12-22 22:57:39  [ restartedMain:4164 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:57:40  [ restartedMain:4441 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:57:40  [ restartedMain:4557 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:57:40  [ restartedMain:4812 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:57:40  [ restartedMain:4973 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:57:40  [ restartedMain:5065 ] - [ INFO ]  Started DemoApplication in 5.705 seconds (JVM running for 8.309)
+2020-12-22 22:57:40  [ http-nio-8080-exec-1:5191 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:57:40  [ http-nio-8080-exec-1:5193 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 22:57:41  [ http-nio-8080-exec-1:6215 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:57:42  [ http-nio-8080-exec-1:6606 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 22:59:25  [ background-preinit:277 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 22:59:25  [ restartedMain:345 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 15480 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 22:59:25  [ restartedMain:347 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 22:59:25  [ restartedMain:449 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 22:59:25  [ restartedMain:449 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 22:59:27  [ restartedMain:2247 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 22:59:27  [ restartedMain:2714 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2263 ms
+2020-12-22 22:59:28  [ restartedMain:3401 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 22:59:28  [ restartedMain:3666 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 22:59:28  [ restartedMain:3753 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 22:59:29  [ restartedMain:3932 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 22:59:29  [ restartedMain:3999 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 22:59:29  [ restartedMain:4034 ] - [ INFO ]  Started DemoApplication in 4.563 seconds (JVM running for 6.358)
+2020-12-22 22:59:29  [ http-nio-8080-exec-1:4551 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 22:59:29  [ http-nio-8080-exec-1:4555 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-22 22:59:30  [ http-nio-8080-exec-8:5260 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 22:59:30  [ http-nio-8080-exec-8:5478 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 23:00:32  [ background-preinit:204 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 23:00:32  [ restartedMain:254 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 32532 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 23:00:32  [ restartedMain:255 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 23:00:32  [ restartedMain:333 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 23:00:32  [ restartedMain:334 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 23:00:34  [ restartedMain:2181 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 23:00:34  [ restartedMain:2634 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2299 ms
+2020-12-22 23:00:35  [ restartedMain:3317 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 23:00:35  [ restartedMain:3520 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 23:00:35  [ restartedMain:3641 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 23:00:35  [ restartedMain:3854 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 23:00:36  [ restartedMain:3928 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 23:00:36  [ restartedMain:3970 ] - [ INFO ]  Started DemoApplication in 4.265 seconds (JVM running for 6.629)
+2020-12-22 23:00:37  [ http-nio-8080-exec-1:5733 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 23:00:37  [ http-nio-8080-exec-1:5736 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 23:00:38  [ http-nio-8080-exec-8:6466 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 23:00:38  [ http-nio-8080-exec-8:6662 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 23:00:54  [ background-preinit:203 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 23:00:54  [ restartedMain:257 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 41832 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 23:00:54  [ restartedMain:258 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 23:00:55  [ restartedMain:346 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 23:00:55  [ restartedMain:347 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 23:00:56  [ restartedMain:2271 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 23:00:57  [ restartedMain:2773 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2424 ms
+2020-12-22 23:00:58  [ restartedMain:3575 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 23:00:58  [ restartedMain:3778 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 23:00:58  [ restartedMain:3869 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 23:00:58  [ restartedMain:4059 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 23:00:58  [ restartedMain:4132 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 23:00:58  [ restartedMain:4172 ] - [ INFO ]  Started DemoApplication in 4.506 seconds (JVM running for 6.627)
+2020-12-22 23:00:58  [ http-nio-8080-exec-2:4223 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 23:00:58  [ http-nio-8080-exec-2:4226 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 23:00:59  [ http-nio-8080-exec-9:4809 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 23:00:59  [ http-nio-8080-exec-9:4990 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 23:01:37  [ background-preinit:204 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 23:01:37  [ restartedMain:263 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 29804 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 23:01:37  [ restartedMain:265 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 23:01:37  [ restartedMain:334 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 23:01:37  [ restartedMain:335 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 23:01:39  [ restartedMain:2091 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 23:01:40  [ restartedMain:2633 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2297 ms
+2020-12-22 23:01:40  [ restartedMain:3359 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 23:01:41  [ restartedMain:3625 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 23:01:41  [ restartedMain:3747 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 23:01:41  [ restartedMain:3934 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 23:01:41  [ restartedMain:3996 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 23:01:41  [ restartedMain:4035 ] - [ INFO ]  Started DemoApplication in 4.318 seconds (JVM running for 6.038)
+2020-12-22 23:01:41  [ http-nio-8080-exec-1:4062 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 23:01:41  [ http-nio-8080-exec-1:4064 ] - [ INFO ]  Completed initialization in 1 ms
+2020-12-22 23:01:42  [ http-nio-8080-exec-8:4690 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 23:01:42  [ http-nio-8080-exec-8:4898 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 23:02:26  [ background-preinit:263 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 23:02:26  [ restartedMain:329 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 1900 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 23:02:26  [ restartedMain:331 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 23:02:27  [ restartedMain:479 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 23:02:27  [ restartedMain:480 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 23:02:29  [ restartedMain:2636 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 23:02:29  [ restartedMain:3181 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2697 ms
+2020-12-22 23:02:30  [ restartedMain:4017 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 23:02:31  [ restartedMain:4358 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 23:02:31  [ restartedMain:4540 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 23:02:31  [ restartedMain:4817 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 23:02:31  [ restartedMain:4894 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 23:02:31  [ restartedMain:4935 ] - [ INFO ]  Started DemoApplication in 5.311 seconds (JVM running for 7.899)
+2020-12-22 23:03:49  [ background-preinit:236 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 23:03:49  [ restartedMain:290 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 29704 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 23:03:49  [ restartedMain:292 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 23:03:49  [ restartedMain:371 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 23:03:49  [ restartedMain:372 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 23:03:51  [ restartedMain:2224 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 23:03:52  [ restartedMain:2717 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2344 ms
+2020-12-22 23:03:52  [ restartedMain:3367 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 23:03:53  [ restartedMain:3579 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 23:03:53  [ restartedMain:3696 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 23:03:53  [ restartedMain:3888 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 23:03:53  [ restartedMain:3950 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 23:03:53  [ restartedMain:3985 ] - [ INFO ]  Started DemoApplication in 4.522 seconds (JVM running for 6.971)
+2020-12-22 23:04:04  [ background-preinit:413 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 23:04:04  [ restartedMain:493 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 37956 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 23:04:04  [ restartedMain:495 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 23:04:04  [ restartedMain:630 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 23:04:04  [ restartedMain:631 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 23:04:06  [ restartedMain:2576 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 23:04:07  [ restartedMain:2995 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2362 ms
+2020-12-22 23:04:07  [ restartedMain:3695 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 23:04:08  [ restartedMain:3992 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 23:04:08  [ restartedMain:4108 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 23:04:08  [ restartedMain:4322 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 23:04:08  [ restartedMain:4394 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 23:04:08  [ restartedMain:4442 ] - [ INFO ]  Started DemoApplication in 4.996 seconds (JVM running for 7.161)
+2020-12-22 23:04:09  [ http-nio-8080-exec-1:5672 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 23:04:09  [ http-nio-8080-exec-1:5675 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-22 23:04:10  [ http-nio-8080-exec-8:6356 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 23:04:10  [ http-nio-8080-exec-8:6570 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 23:08:02  [ background-preinit:332 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 23:08:02  [ restartedMain:407 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 25412 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 23:08:02  [ restartedMain:409 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 23:08:02  [ restartedMain:518 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 23:08:02  [ restartedMain:518 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 23:08:04  [ restartedMain:2457 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 23:08:04  [ restartedMain:2910 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2390 ms
+2020-12-22 23:08:05  [ restartedMain:3641 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 23:08:05  [ restartedMain:3850 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 23:08:05  [ restartedMain:3951 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 23:08:05  [ restartedMain:4158 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 23:08:05  [ restartedMain:4218 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 23:08:06  [ restartedMain:4255 ] - [ INFO ]  Started DemoApplication in 4.858 seconds (JVM running for 6.924)
+2020-12-22 23:08:06  [ http-nio-8080-exec-1:4309 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 23:08:06  [ http-nio-8080-exec-1:4312 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-22 23:08:06  [ http-nio-8080-exec-8:4977 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 23:08:06  [ http-nio-8080-exec-8:5189 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-22 23:08:25  [ background-preinit:205 ] - [ INFO ]  HV000001: Hibernate Validator 6.1.6.Final
+2020-12-22 23:08:25  [ restartedMain:258 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 27472 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-22 23:08:25  [ restartedMain:260 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-22 23:08:25  [ restartedMain:339 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-22 23:08:25  [ restartedMain:340 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-22 23:08:27  [ restartedMain:2341 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-22 23:08:28  [ restartedMain:2813 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2472 ms
+2020-12-22 23:08:28  [ restartedMain:3482 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-22 23:08:29  [ restartedMain:3706 ] - [ INFO ]  Adding welcome page template: index
+2020-12-22 23:08:29  [ restartedMain:3805 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-22 23:08:29  [ restartedMain:3975 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-12-22 23:08:29  [ restartedMain:4037 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-22 23:08:29  [ restartedMain:4069 ] - [ INFO ]  Started DemoApplication in 4.417 seconds (JVM running for 7.008)
+2020-12-22 23:08:30  [ http-nio-8080-exec-1:4787 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-22 23:08:30  [ http-nio-8080-exec-1:4790 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-22 23:08:30  [ http-nio-8080-exec-8:5303 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-22 23:08:30  [ http-nio-8080-exec-8:5487 ] - [ INFO ]  HikariPool-1 - Start completed.

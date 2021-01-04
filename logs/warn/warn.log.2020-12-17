@@ -1,0 +1,8 @@
+2020-12-17 18:26:58  [ restartedMain:5208 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-17 18:27:46  [ http-nio-8080-exec-6:53073 ] - [ WARN ]  Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'myfile' is not present]
+2020-12-17 21:03:02  [ restartedMain:2946 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-17 21:17:55  [ restartedMain:3089 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-17 21:19:28  [ restartedMain:3117 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-17 21:39:52  [ restartedMain:2796 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-17 22:23:57  [ restartedMain:3482 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-17 22:24:31  [ restartedMain:3579 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.

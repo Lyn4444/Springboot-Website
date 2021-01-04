@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”description” content="news">
+    <meta name=”keyword” content="Springboot,news,后续">
+    <title>404</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/mdui.css"/>
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-amber mdui-theme-accent-pink">
+<!--头部-->
+<header class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-theme">
+        <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}" id="toggle"><i class="mdui-icon material-icons">menu</i></span>
+        <a id="title_tips" href="/index" class="mdui-typo-headline mdui-hidden-xs">找不到页面，请点此返回主页</a>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-textfield mdui-textfield-expandable mdui-float-right">
+
+            <button class="mdui-textfield-icon mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></button>
+            <form id="search_form" action="" method="GET" class="searchform"  onsubmit="return false">
+                <input id="search_box" class="search-input" type="text" name="search" placeholder="输入关键字"/>
+                <button id="to_search" class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">done</i></button>
+            </form>
+        </div>
+    </div>
+</header>
+<!--头部 end-->
+<div class="mdui-container">
+
+    <!--侧边栏 -->
+    <div class="mdui-drawer" id="main-drawer">
+        <ul class="mdui-list">
+            <li class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#geout'}" th:if="${session.username}">
+                <i class="mdui-list-item-icon mdui-icon material-icons">keyboard_return</i>
+                <div class="mdui-list-item-content" onclick="window.open('logout', '_self')">注销</div>
+            </li>
+
+
+            <li class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#LoginDialog'}" th:unless="${session.username}">
+                <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
+                <div class="mdui-list-item-content">登录</div>
+            </li>
+            <li class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#RegisterDialog'}" th:unless="${session.username}">
+                <i class="mdui-list-item-icon mdui-icon material-icons">assignment</i>
+                <div class="mdui-list-item-content">注册</div>
+            </li>
+
+
+            <li class="mdui-subheader" th:if="${session.username}"><a>欢迎回来&nbsp;&nbsp;&nbsp;</a>
+                <a th:text="${session.username}"></a>
+            </li>
+
+            <li class="mdui-subheader" th:unless="${session.username}"><a>请登录</a>
+                <div></div>
+            </li>
+
+            <!-- 身份区分-->
+            <!-- 管理员 -->
+
+            <li class="mdui-list-item mdui-ripple" id="admin" mdui-dialog="{target: '#admin'}" th:if="${session.isAdmin eq 1}">
+                <i class="mdui-list-item-icon mdui-icon material-icons" id="admin">dashboard</i>
+                <div class="mdui-list-item-content" onclick="window.open('/admin', '_self')" id="admin">管理中心</div>
+            </li>
+
+            <!-- 普通用户-->
+            <li class="mdui-list-item mdui-ripple" id="member" mdui-dialog="{target: '#member'}" th:if="${session.username}">
+                <i class="mdui-list-item-icon mdui-icon material-icons" id="member">donut_small</i>
+                <div class="mdui-list-item-content" onclick="window.open('/user', '_self')" id="member">个人中心</div>
+            </li>
+            <!-- 未登录，不显示-->
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">email</i>
+                <div class="mdui-list-item-content" onclick="window.open('mailto:xxxxxxxx@localhost.com', '_self')">与我联系</div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!--登录对话框-->
+    <div class="mdui-dialog" id="LoginDialog">
+        <div id="example4-tab1" class="mdui-p-a-2">
+            <a href="#example4-tab1" class="mdui-ripple">Login</a>
+            <form id="login_form" action="" method="post" onsubmit="return false">
+                <!-- 浮动标签、多行文本框 -->
+                <div class="mdui-textfield mdui-textfield-floating-label">
+                    <i class="mdui-icon material-icons">account_circle</i>
+                    <label class="mdui-textfield-label">用户名</label>
+                    <input id="login_username" class="mdui-textfield-input search-input" name="username" required></input>
+                </div>
+                <!-- 浮动标签、多行文本框 -->
+                <div class="mdui-textfield mdui-textfield-floating-label">
+                    <i class="mdui-icon material-icons">lock</i>
+                    <label class="mdui-textfield-label">密码</label>
+                    <input id="login_password" class="mdui-textfield-input search-input" type="password" name="password" required></input>
+                </div>
+
+                <div class="mdui-col">
+                    <button id="login_submit" class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--注册对话框-->
+    <div class="mdui-dialog" id="RegisterDialog">
+        <div id="example4-tab1" class="mdui-p-a-2">
+            <a href="#example4-tab1" class="mdui-ripple">Register</a>
+            <form id="register_form" action="" method="post" onsubmit="return false">
+                <!-- 浮动标签、多行文本框 -->
+                <div class="mdui-textfield mdui-textfield-floating-label">
+
+                    <i class="mdui-icon material-icons">account_circle</i>
+                    <label class="mdui-textfield-label">用户名</label>
+                    <input id="register_username" class="mdui-textfield-input search-input" name="uname" required></input>
+                    <div class="mdui-textfield-error">用户名不能为空</div>
+                </div>
+                <!-- 浮动标签、多行文本框 -->
+                <div class="mdui-textfield mdui-textfield-floating-label">
+                    <i class="mdui-icon material-icons">email</i>
+                    <label class="mdui-textfield-label">电子邮箱</label>
+                    <input id="register_email" class="mdui-textfield-input search-input" type="email" name="emailaddress" required></input>
+                    <div class="mdui-textfield-error">邮箱格式错误</div>
+                </div>
+                <!-- 浮动标签、多行文本框 -->
+                <div class="mdui-textfield mdui-textfield-floating-label">
+                    <i class="mdui-icon material-icons">lock</i>
+                    <label class="mdui-textfield-label">密码</label>
+                    <input id="register_password" class="mdui-textfield-input search-input" type="password"  name="password" required></input>
+                </div>
+
+                <div class="mdui-col">
+                    <button id="register_submit" class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--文章内容-->
+<div class="main-content">
+</div>
+
+<div class="mdui-row">
+</div>
+
+
+</div>
+<div class="gotop">
+    <button class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-ripple mdui-btn-icon"><i class="mdui-icon material-icons">keyboard_arrow_up</i></button>
+</div>
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+
+<script src="/js/jsencrypt.js"></script>
+<script>
+    $("#login_submit").click(function login() {
+        var username = document.getElementById('login_username').value;
+        var password = document.getElementById('login_password').value;
+        var PUBLIC_KEY = 'MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIb+qVG+ULCfI1mWtYu0bccFV7/wVCyLJwiVLXybeIXFmLLXKYQKAT9i0xqknC6SF0fDQvkWSocp2Ac7Cit89HsCAwEAAQ==';
+        var encrypt = new JSEncrypt();
+        encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
+        username = encrypt.encrypt(username);
+        password = encrypt.encrypt(password);
+        //encryptForm(username, password);
+        var loginJson={
+            "username": username,
+            "password": password
+        };
+        console.log(JSON.stringify(loginJson));
+        $.ajax({
+            type: "POST",
+            url: "/login",
+            contentType: "application/json;charset=utf-8",
+            data:JSON.stringify(loginJson),//schoolList是你要提交是json字符串
+            dataType: "json",
+            success:function (message) {
+                alert("提交成功"+JSON.stringify(message));
+                console.log(message);
+                window.location.reload();
+                //window.location.replace("/index");
+            },
+            error:function (message) {
+                alert("提交失败"+JSON.stringify(message));
+                console.log(message);
+            }
+        });
+
+    });
+
+    function encryptForm(username, password){
+        // 获取数据
+        alert(username);
+        alert(password);
+        //可在此修改input
+        var encrypt = new JSEncrypt();
+        encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
+        username = encrypt.encrypt(username);
+        password = encrypt.encrypt(password);
+        alert(username);
+        alert(password);
+        //进行下一步
+        return true;
+    }
+</script>
+<script>
+    $("#register_submit").click(function login() {
+        var username = document.getElementById('register_username').value;
+        var password = document.getElementById('register_password').value;
+        var email = document.getElementById('register_email').value;
+        var PUBLIC_KEY = 'MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIb+qVG+ULCfI1mWtYu0bccFV7/wVCyLJwiVLXybeIXFmLLXKYQKAT9i0xqknC6SF0fDQvkWSocp2Ac7Cit89HsCAwEAAQ==';
+        var encrypt = new JSEncrypt();
+        encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
+        username = encrypt.encrypt(username);
+        password = encrypt.encrypt(password);
+        email = encrypt.encrypt(email);
+        //encryptForm(username, password);
+        var registerJson={
+            "username": username,
+            "password": password,
+            "email": email
+        };
+        console.log(JSON.stringify(registerJson));
+        $.ajax({
+            type: "POST",
+            url: "/register",
+            contentType: "application/json;charset=utf-8",
+            data:JSON.stringify(registerJson),//schoolList是你要提交是json字符串
+            dataType: "json",
+            success:function (message) {
+                alert("提交成功"+JSON.stringify(message));
+                console.log(message);
+            },
+            error:function (message) {
+                alert("提交失败"+JSON.stringify(message));
+                console.log(message);
+            }
+        });
+    });
+</script>
+
+<script src="/js/mdui.js"></script>
+</html>

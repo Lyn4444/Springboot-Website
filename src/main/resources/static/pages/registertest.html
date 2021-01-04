@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestRegister</title>
+</head>
+<script src="/js/jsencrypt.js"></script>
+
+<script crossorigin="anonymous" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" src="https://lib.baomitu.com/jquery/3.5.1/jquery.js"></script>
+<body>
+<form id=“register_form” action="##" method="post" onsubmit="return false">
+    用户名：<input type="text" name="username" id="register_username">
+    邮箱：<input type="text" name="email" id="register_email">
+    密码：<input type='password' name='password' id="register_password">
+    <button id="register_submit" type="submit" value="Submit">提交</button>
+</form>
+<script>
+    $("#register_submit").click(function login() {
+        var username = document.getElementById('register_username').value;
+        var password = document.getElementById('register_password').value;
+        var email = document.getElementById('register_email').value;
+        var PUBLIC_KEY = 'MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAIb+qVG+ULCfI1mWtYu0bccFV7/wVCyLJwiVLXybeIXFmLLXKYQKAT9i0xqknC6SF0fDQvkWSocp2Ac7Cit89HsCAwEAAQ==';
+        var encrypt = new JSEncrypt();
+        encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
+        username = encrypt.encrypt(username);
+        password = encrypt.encrypt(password);
+        email = encrypt.encrypt(email);
+        //encryptForm(username, password);
+        var registerJson={
+            "username": username,
+            "password": password,
+            "email": email
+        };
+        console.log(JSON.stringify(registerJson));
+        $.ajax({
+            type: "POST",
+            url: "/register",
+            contentType: "application/json;charset=utf-8",
+            data:JSON.stringify(registerJson),//schoolList是你要提交是json字符串
+            dataType: "json",
+            success:function (message) {
+                alert("提交成功"+JSON.stringify(message));
+                console.log(message);
+            },
+            error:function (message) {
+                alert("提交失败"+JSON.stringify(message));
+                console.log(message);
+            }
+        });
+    });
+
+    function encryptForm(username, password){
+        // 获取数据
+        alert(username);
+        alert(password);
+        //可在此修改input
+        var encrypt = new JSEncrypt();
+        encrypt.setPublicKey('-----BEGIN PUBLIC KEY-----' + PUBLIC_KEY + '-----END PUBLIC KEY-----');
+        username = encrypt.encrypt(username);
+        password = encrypt.encrypt(password);
+        alert(username);
+        alert(password);
+        //进行下一步
+        return true;
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+2020-12-26 14:07:09  [ restartedMain:12251 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-26 14:07:35  [ http-nio-8080-exec-8:38357 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-26 14:07:35  [ http-nio-8080-exec-8:38365 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-26 14:32:53  [ restartedMain:6624 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-26 14:33:02  [ http-nio-8080-exec-10:14835 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-26 14:33:02  [ http-nio-8080-exec-10:14839 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-26 14:33:10  [ http-nio-8080-exec-5:23350 ] - [ ERROR ]  发生一个异常：java.lang.NullPointerException
+2020-12-26 14:33:10  [ http-nio-8080-exec-5:23354 ] - [ WARN ]  Resolved [java.lang.NullPointerException]
+2020-12-26 14:33:13  [ http-nio-8080-exec-5:26330 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-26 14:33:13  [ http-nio-8080-exec-5:26335 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-26 14:33:22  [ http-nio-8080-exec-9:35042 ] - [ ERROR ]  发生一个异常：com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票
+2020-12-26 14:33:22  [ http-nio-8080-exec-9:35046 ] - [ WARN ]  Resolved [com.example.demo.exception.ArticleException: 这篇新闻暂时没有投票]
+2020-12-26 14:38:15  [ restartedMain:10322 ] - [ WARN ]  [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-26 14:46:48  [ restartedMain:523762 ] - [ WARN ]  No MyBatis mapper was found in '[com.example.demo.mapper]' package. Please check your configuration.

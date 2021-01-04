@@ -1,0 +1,688 @@
+2020-12-11 00:01:06  [ main:317 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 23752 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:01:06  [ main:324 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:01:08  [ main:2074 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:01:08  [ main:2448 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2014 ms
+2020-12-11 00:01:09  [ main:3014 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:01:09  [ main:3243 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:01:09  [ main:3422 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:01:09  [ main:3458 ] - [ INFO ]  Started DemoApplication in 3.838 seconds (JVM running for 5.144)
+2020-12-11 00:01:17  [ http-nio-8080-exec-1:11586 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:01:17  [ http-nio-8080-exec-1:11590 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-11 00:01:18  [ http-nio-8080-exec-1:11935 ] - [ ERROR ]  [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-12-11 00:16:53  [ main:219 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 27044 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:16:53  [ main:225 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:16:55  [ main:1805 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:16:55  [ main:2198 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1873 ms
+2020-12-11 00:16:56  [ main:2733 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:16:56  [ main:2832 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:16:56  [ main:2937 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:16:56  [ main:3102 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:16:56  [ main:3144 ] - [ INFO ]  Started DemoApplication in 3.509 seconds (JVM running for 4.664)
+2020-12-11 00:17:06  [ http-nio-8080-exec-1:13303 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:17:06  [ http-nio-8080-exec-1:13308 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-11 00:17:07  [ http-nio-8080-exec-1:13681 ] - [ ERROR ]  [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 32, col 73)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 32, col 73)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: (Line = 32, Column = 73) Malformed markup: Attribute "mdui-dialog" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:300)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 more
+2020-12-11 00:22:59  [ main:490 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 14512 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:22:59  [ main:494 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:23:01  [ main:3291 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:23:02  [ main:3798 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3065 ms
+2020-12-11 00:23:03  [ main:4510 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:23:03  [ main:4653 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:23:03  [ main:4791 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:23:03  [ main:5041 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:23:03  [ main:5091 ] - [ INFO ]  Started DemoApplication in 5.824 seconds (JVM running for 7.85)
+2020-12-11 00:23:06  [ http-nio-8080-exec-2:8282 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:23:06  [ http-nio-8080-exec-2:8287 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-11 00:23:07  [ http-nio-8080-exec-2:8859 ] - [ ERROR ]  [THYMELEAF][http-nio-8080-exec-2] Exception processing template "index": An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 42, col 20)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 42, col 20)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: (Line = 42, Column = 20) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:300)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 more
+2020-12-11 00:25:21  [ main:269 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 18192 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:25:21  [ main:272 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:25:23  [ main:2413 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:25:23  [ main:2877 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2481 ms
+2020-12-11 00:25:24  [ main:3537 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:25:24  [ main:3685 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:25:24  [ main:3814 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:25:25  [ main:4051 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:25:25  [ main:4099 ] - [ INFO ]  Started DemoApplication in 4.55 seconds (JVM running for 5.954)
+2020-12-11 00:25:28  [ http-nio-8080-exec-1:7788 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:25:28  [ http-nio-8080-exec-1:7793 ] - [ INFO ]  Completed initialization in 5 ms
+2020-12-11 00:25:29  [ http-nio-8080-exec-1:8352 ] - [ ERROR ]  [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 41, col 20)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 41, col 20)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: (Line = 41, Column = 20) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:300)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 more
+2020-12-11 00:25:54  [ main:343 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 23724 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:25:54  [ main:345 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:25:58  [ main:4553 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:26:00  [ main:5864 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 5366 ms
+2020-12-11 00:26:01  [ main:7257 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:26:01  [ main:7403 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:26:01  [ main:7550 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:26:02  [ main:7764 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:26:02  [ main:7809 ] - [ INFO ]  Started DemoApplication in 8.269 seconds (JVM running for 9.971)
+2020-12-11 00:26:05  [ http-nio-8080-exec-1:10623 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:26:05  [ http-nio-8080-exec-1:10635 ] - [ INFO ]  Completed initialization in 8 ms
+2020-12-11 00:26:05  [ http-nio-8080-exec-1:11332 ] - [ ERROR ]  [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 38, col 20)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 38, col 20)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: (Line = 38, Column = 20) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:300)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 more
+2020-12-11 00:26:54  [ main:403 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 11564 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:26:54  [ main:406 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:26:56  [ main:2972 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:26:57  [ main:3499 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2919 ms
+2020-12-11 00:26:57  [ main:4208 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:26:57  [ main:4383 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:26:58  [ main:4552 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:26:58  [ main:4819 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:26:58  [ main:4874 ] - [ INFO ]  Started DemoApplication in 5.451 seconds (JVM running for 7.391)
+2020-12-11 00:27:02  [ http-nio-8080-exec-1:8882 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:27:02  [ http-nio-8080-exec-1:8886 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-11 00:27:03  [ http-nio-8080-exec-1:9460 ] - [ ERROR ]  [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 38, col 20)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 38, col 20)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: (Line = 38, Column = 20) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:300)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 more
+2020-12-11 00:31:32  [ main:298 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 10876 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:31:32  [ main:304 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:31:34  [ main:2359 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:31:35  [ main:2952 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2510 ms
+2020-12-11 00:31:35  [ main:3562 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:31:36  [ main:3696 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:31:36  [ main:3825 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:31:36  [ main:4058 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:31:36  [ main:4112 ] - [ INFO ]  Started DemoApplication in 4.505 seconds (JVM running for 6.226)
+2020-12-11 00:31:41  [ http-nio-8080-exec-1:9631 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:31:41  [ http-nio-8080-exec-1:9635 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-11 00:31:42  [ http-nio-8080-exec-1:10155 ] - [ ERROR ]  [THYMELEAF][http-nio-8080-exec-1] Exception processing template "index": An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 87, col 58)
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [static/pages/index.html]" - line 87, col 58)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1394)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1139)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1078)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: (Line = 87, Column = 58) Malformed markup: Attribute "class" appears more than once in element
+	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549)
+	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:300)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 more
+2020-12-11 00:33:22  [ main:326 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 9556 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:33:22  [ main:330 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:33:24  [ main:2498 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:33:25  [ main:3025 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2547 ms
+2020-12-11 00:33:25  [ main:3707 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:33:25  [ main:3839 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:33:26  [ main:3979 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:33:26  [ main:4253 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:33:26  [ main:4310 ] - [ INFO ]  Started DemoApplication in 4.768 seconds (JVM running for 6.246)
+2020-12-11 00:33:30  [ http-nio-8080-exec-2:8300 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:33:30  [ http-nio-8080-exec-2:8305 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-11 00:36:19  [ main:894 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 9916 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:36:19  [ main:897 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:36:40  [ main:485 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 2004 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:36:40  [ main:490 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:36:43  [ main:3080 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:36:44  [ main:3654 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2973 ms
+2020-12-11 00:36:45  [ main:4527 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:36:45  [ main:4693 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:36:45  [ main:4864 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:36:45  [ main:5297 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:36:45  [ main:5383 ] - [ INFO ]  Started DemoApplication in 6.04 seconds (JVM running for 7.784)
+2020-12-11 00:36:47  [ http-nio-8080-exec-1:7206 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:36:47  [ http-nio-8080-exec-1:7212 ] - [ INFO ]  Completed initialization in 6 ms
+2020-12-11 00:41:32  [ main:341 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 17024 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:41:32  [ main:343 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:41:35  [ main:2852 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:41:35  [ main:3433 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2964 ms
+2020-12-11 00:41:36  [ main:4104 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:41:36  [ main:4256 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:41:36  [ main:4425 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:41:37  [ main:4646 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:41:37  [ main:4694 ] - [ INFO ]  Started DemoApplication in 5.173 seconds (JVM running for 6.962)
+2020-12-11 00:41:39  [ http-nio-8080-exec-1:7450 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:41:39  [ http-nio-8080-exec-1:7455 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-11 00:43:41  [ main:359 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 3928 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:43:41  [ main:363 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:43:43  [ main:2624 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:43:44  [ main:3173 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2674 ms
+2020-12-11 00:43:45  [ main:3881 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:43:45  [ main:4026 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:43:45  [ main:4150 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:43:45  [ main:4354 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:43:45  [ main:4404 ] - [ INFO ]  Started DemoApplication in 4.944 seconds (JVM running for 6.677)
+2020-12-11 00:44:01  [ main:520 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 14204 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:44:01  [ main:524 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:44:03  [ main:2636 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:44:04  [ main:3233 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2548 ms
+2020-12-11 00:44:05  [ main:3995 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:44:05  [ main:4178 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:44:05  [ main:4338 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:44:05  [ main:4595 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:44:05  [ main:4648 ] - [ INFO ]  Started DemoApplication in 5.258 seconds (JVM running for 7.147)
+2020-12-11 00:44:09  [ http-nio-8080-exec-1:8477 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:44:09  [ http-nio-8080-exec-1:8479 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-11 00:46:05  [ main:334 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 21812 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:46:05  [ main:338 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:46:08  [ main:2669 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:46:08  [ main:3213 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2771 ms
+2020-12-11 00:46:09  [ main:3782 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:46:09  [ main:3955 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:46:09  [ main:4162 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:46:09  [ main:4421 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:46:09  [ main:4472 ] - [ INFO ]  Started DemoApplication in 4.98 seconds (JVM running for 6.404)
+2020-12-11 00:46:39  [ http-nio-8080-exec-1:34608 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:46:39  [ http-nio-8080-exec-1:34612 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-11 00:48:08  [ main:384 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 19744 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:48:08  [ main:387 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:48:10  [ main:2969 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:48:11  [ main:3473 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2954 ms
+2020-12-11 00:48:12  [ main:4374 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:48:12  [ main:4627 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:48:12  [ main:4749 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:48:12  [ main:4963 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:48:13  [ main:5019 ] - [ INFO ]  Started DemoApplication in 5.624 seconds (JVM running for 7.117)
+2020-12-11 00:48:36  [ main:343 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 21552 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:48:36  [ main:346 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:48:39  [ main:2677 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:48:39  [ main:3185 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2702 ms
+2020-12-11 00:48:40  [ main:3956 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:48:40  [ main:4078 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:48:40  [ main:4202 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:48:40  [ main:4535 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:48:40  [ main:4593 ] - [ INFO ]  Started DemoApplication in 5.028 seconds (JVM running for 6.803)
+2020-12-11 00:48:41  [ http-nio-8080-exec-1:5472 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:48:41  [ http-nio-8080-exec-1:5477 ] - [ INFO ]  Completed initialization in 4 ms
+2020-12-11 00:49:54  [ main:799 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 27336 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:49:54  [ main:803 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:49:58  [ main:4442 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:49:58  [ main:4981 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3867 ms
+2020-12-11 00:49:59  [ main:5657 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:49:59  [ main:5785 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:49:59  [ main:5926 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:50:00  [ main:6244 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:50:00  [ main:6318 ] - [ INFO ]  Started DemoApplication in 7.335 seconds (JVM running for 10.014)
+2020-12-11 00:50:00  [ http-nio-8080-exec-1:6383 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:50:00  [ http-nio-8080-exec-1:6387 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-11 00:50:13  [ http-nio-8080-exec-1:19913 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-11 00:50:14  [ http-nio-8080-exec-1:20179 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-11 00:52:31  [ main:318 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 16912 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:52:31  [ main:322 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:52:33  [ main:2437 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:52:34  [ main:2929 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2447 ms
+2020-12-11 00:52:34  [ main:3550 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:52:35  [ main:3692 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:52:35  [ main:3826 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:52:35  [ main:4049 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:52:35  [ main:4099 ] - [ INFO ]  Started DemoApplication in 4.503 seconds (JVM running for 5.801)
+2020-12-11 00:52:39  [ http-nio-8080-exec-1:8432 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:52:39  [ http-nio-8080-exec-1:8435 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-11 00:52:48  [ http-nio-8080-exec-2:16847 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-11 00:52:48  [ http-nio-8080-exec-2:17072 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-11 00:53:58  [ main:270 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 23540 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:53:58  [ main:274 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:53:59  [ main:2133 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:54:00  [ main:2765 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2363 ms
+2020-12-11 00:54:01  [ main:3344 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:54:01  [ main:3511 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:54:01  [ main:3638 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:54:01  [ main:3855 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:54:01  [ main:3910 ] - [ INFO ]  Started DemoApplication in 4.297 seconds (JVM running for 5.999)
+2020-12-11 00:54:02  [ http-nio-8080-exec-1:4674 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:54:02  [ http-nio-8080-exec-1:4678 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-11 00:54:15  [ http-nio-8080-exec-1:17506 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-11 00:54:15  [ http-nio-8080-exec-1:17730 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-11 00:58:32  [ main:275 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 14244 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:58:32  [ main:278 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:58:33  [ main:2196 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:58:34  [ main:2690 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2280 ms
+2020-12-11 00:58:35  [ main:3306 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:58:35  [ main:3441 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:58:35  [ main:3567 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:58:35  [ main:3832 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:58:35  [ main:3878 ] - [ INFO ]  Started DemoApplication in 4.36 seconds (JVM running for 5.971)
+2020-12-11 00:58:35  [ http-nio-8080-exec-1:4048 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:58:35  [ http-nio-8080-exec-1:4058 ] - [ INFO ]  Completed initialization in 7 ms
+2020-12-11 00:58:47  [ http-nio-8080-exec-1:15416 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-11 00:58:47  [ http-nio-8080-exec-1:15617 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-11 00:59:23  [ main:333 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 25668 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 00:59:23  [ main:336 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 00:59:26  [ main:2684 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 00:59:26  [ main:3181 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2719 ms
+2020-12-11 00:59:27  [ main:3760 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 00:59:27  [ main:3913 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 00:59:27  [ main:4053 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 00:59:27  [ main:4291 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 00:59:27  [ main:4352 ] - [ INFO ]  Started DemoApplication in 4.774 seconds (JVM running for 6.684)
+2020-12-11 00:59:29  [ http-nio-8080-exec-1:6069 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 00:59:29  [ http-nio-8080-exec-1:6078 ] - [ INFO ]  Completed initialization in 8 ms
+2020-12-11 00:59:38  [ http-nio-8080-exec-1:15037 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-11 00:59:38  [ http-nio-8080-exec-1:15236 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-11 01:09:13  [ HikariPool-1 housekeeper:589914 ] - [ WARN ]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m4s478ms556µs300ns).
+2020-12-11 14:26:04  [ main:275 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 16136 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 14:26:04  [ main:279 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 14:26:06  [ main:2475 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 14:26:08  [ main:3579 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 3189 ms
+2020-12-11 14:26:08  [ main:4197 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 14:26:08  [ main:4315 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 14:26:08  [ main:4437 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 14:26:09  [ main:4656 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 14:26:09  [ main:4706 ] - [ INFO ]  Started DemoApplication in 5.129 seconds (JVM running for 7.004)
+2020-12-11 14:26:13  [ http-nio-8080-exec-1:9521 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 14:26:13  [ http-nio-8080-exec-1:9523 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-11 14:26:51  [ http-nio-8080-exec-3:47281 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-11 14:26:52  [ http-nio-8080-exec-3:48026 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-11 14:27:26  [ main:387 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 7936 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 14:27:26  [ main:391 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 14:27:29  [ main:2967 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 14:27:29  [ main:3504 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2989 ms
+2020-12-11 14:27:30  [ main:4742 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 14:27:30  [ main:4858 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 14:27:31  [ main:4984 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 14:27:31  [ main:5398 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 14:27:31  [ main:5462 ] - [ INFO ]  Started DemoApplication in 6.929 seconds (JVM running for 8.72)
+2020-12-11 14:27:44  [ main:668 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 24544 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 14:27:44  [ main:671 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 14:27:53  [ main:301 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 34628 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 14:27:53  [ main:306 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 14:27:55  [ main:2267 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 14:27:55  [ main:2804 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2375 ms
+2020-12-11 14:27:56  [ main:3419 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 14:27:56  [ main:3549 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 14:27:56  [ main:3687 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 14:27:56  [ main:3934 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 14:27:56  [ main:3992 ] - [ INFO ]  Started DemoApplication in 4.435 seconds (JVM running for 5.783)
+2020-12-11 14:28:00  [ http-nio-8080-exec-1:7346 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 14:28:00  [ http-nio-8080-exec-1:7349 ] - [ INFO ]  Completed initialization in 2 ms
+2020-12-11 14:28:06  [ http-nio-8080-exec-2:13787 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-11 14:28:06  [ http-nio-8080-exec-2:13968 ] - [ INFO ]  HikariPool-1 - Start completed.
+2020-12-11 14:33:19  [ main:360 ] - [ INFO ]  Starting DemoApplication using Java 1.8.0_202 on DESKTOP-ARRLAP7 with PID 29656 (C:\Users\Kitcham\IdeaProjects\demo\target\classes started by Kitcham in C:\Users\Kitcham\IdeaProjects\demo)
+2020-12-11 14:33:19  [ main:364 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-12-11 14:33:21  [ main:2545 ] - [ INFO ]  Tomcat initialized with port(s): 8080 (http)
+2020-12-11 14:33:22  [ main:3102 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2594 ms
+2020-12-11 14:33:22  [ main:3704 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-11 14:33:23  [ main:3862 ] - [ INFO ]  Adding welcome page template: index
+2020-12-11 14:33:23  [ main:3978 ] - [ WARN ]  [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-12-11 14:33:23  [ main:4174 ] - [ INFO ]  Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-11 14:33:23  [ main:4217 ] - [ INFO ]  Started DemoApplication in 4.649 seconds (JVM running for 6.463)
+2020-12-11 14:33:39  [ http-nio-8080-exec-1:20344 ] - [ INFO ]  Initializing Servlet 'dispatcherServlet'
+2020-12-11 14:33:39  [ http-nio-8080-exec-1:20347 ] - [ INFO ]  Completed initialization in 3 ms
+2020-12-11 14:34:14  [ http-nio-8080-exec-3:55334 ] - [ INFO ]  HikariPool-1 - Starting...
+2020-12-11 14:34:14  [ http-nio-8080-exec-3:55625 ] - [ INFO ]  HikariPool-1 - Start completed.
